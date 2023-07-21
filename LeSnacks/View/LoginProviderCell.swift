@@ -9,6 +9,7 @@ import SwiftUI
 import SnowballAssetKit
 
 struct LoginProviderCell: View {
+    @Binding var userIsAuthenticated: Bool
     let provider: LoginProvider
     
     var body: some View {
@@ -16,10 +17,10 @@ struct LoginProviderCell: View {
             // to do: fix coloring
             SnowballImage(provider.icon)
             
-            Text(provider.title)
-            .foregroundColor(.primary)
-            .font(.subheadline)
-            .frame(maxWidth: .infinity, alignment: .leading)
+            Text(provider.title.capitalized(with: .current))
+                .foregroundColor(.primary)
+                .font(.subheadline)
+                .frame(maxWidth: .infinity, alignment: .leading)
             
             Image(systemName: "arrow.up.right")
                 .foregroundColor(Color(UIColor.quaternaryLabel))
@@ -30,26 +31,16 @@ struct LoginProviderCell: View {
         .frame(maxWidth: .infinity, alignment: .leading)
         .background(Color(UIColor.tertiarySystemFill))
         .cornerRadius(12)
+        .onTapGesture {
+            userIsAuthenticated = true
+        }
     }
 }
 
 struct LoginProviderCell_Previews: PreviewProvider {
     static var previews: some View {
-        LoginProviderCell(provider: LoginProvider(.metamask))
+        LoginProviderCell(userIsAuthenticated: .constant(false), provider: LoginProvider(.metamask))
             .padding()
-            .previewLayout(.sizeThatFits)        
-    }
-}
-
-
-struct LoginProvider {
-    let icon: SnowballIcon
-    
-    public init(_ provider: SnowballIcon) {
-        self.icon = provider
-    }
-    
-    var title: String {
-        return icon.rawValue
+            .previewLayout(.sizeThatFits)
     }
 }

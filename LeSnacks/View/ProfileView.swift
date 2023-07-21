@@ -12,7 +12,13 @@ struct ProfileView: View {
         VStack {
             Rectangle()
                 .fill(Color.gray)
-                .frame(height: 300)
+                .frame(height: 400)
+            HStack(alignment: .center) {
+                Text("100 Reputation")
+                Spacer()
+                Text("World Id")
+            }
+            .padding(20)
             HStack(alignment: .center) {
                 Text("Resturant")
                 Spacer()
@@ -21,7 +27,7 @@ struct ProfileView: View {
             .padding(20)
             Spacer()
         }
-        
+        .ignoresSafeArea()
     }
 }
 

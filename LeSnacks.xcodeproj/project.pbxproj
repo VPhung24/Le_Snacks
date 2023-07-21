@@ -22,6 +22,13 @@
 		088927B92A6B3061007DFE0E /* LICENSE.md in Resources */ = {isa = PBXBuildFile; fileRef = 088927B72A6B3061007DFE0E /* LICENSE.md */; };
 		088927BA2A6B3061007DFE0E /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 088927B82A6B3061007DFE0E /* README.md */; };
 		088927BC2A6B306C007DFE0E /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 088927BB2A6B306C007DFE0E /* .gitignore */; };
+		088927BF2A6B31AF007DFE0E /* LoginProviders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088927BE2A6B31AF007DFE0E /* LoginProviders.swift */; };
+		088927C42A6B33E6007DFE0E /* ChatListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088927C32A6B33E6007DFE0E /* ChatListView.swift */; };
+		088927C62A6B33EF007DFE0E /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088927C52A6B33EF007DFE0E /* ChatView.swift */; };
+		088927C82A6B3BDA007DFE0E /* RepConnectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088927C72A6B3BDA007DFE0E /* RepConnectView.swift */; };
+		088927CB2A6B3D35007DFE0E /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088927CA2A6B3D35007DFE0E /* Restaurant.swift */; };
+		088927CD2A6B3D78007DFE0E /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088927CC2A6B3D78007DFE0E /* APIManager.swift */; };
+		088927D02A6B3DD6007DFE0E /* RestaurantViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088927CF2A6B3DD6007DFE0E /* RestaurantViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +66,13 @@
 		088927B72A6B3061007DFE0E /* LICENSE.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
 		088927B82A6B3061007DFE0E /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		088927BB2A6B306C007DFE0E /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		088927BE2A6B31AF007DFE0E /* LoginProviders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginProviders.swift; sourceTree = "<group>"; };
+		088927C32A6B33E6007DFE0E /* ChatListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListView.swift; sourceTree = "<group>"; };
+		088927C52A6B33EF007DFE0E /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		088927C72A6B3BDA007DFE0E /* RepConnectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepConnectView.swift; sourceTree = "<group>"; };
+		088927CA2A6B3D35007DFE0E /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
+		088927CC2A6B3D78007DFE0E /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		088927CF2A6B3DD6007DFE0E /* RestaurantViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,10 +129,10 @@
 			isa = PBXGroup;
 			children = (
 				088927812A6B2427007DFE0E /* LeSnacksApp.swift */,
-				088927832A6B2427007DFE0E /* LoginView.swift */,
-				088927B02A6B2AA0007DFE0E /* LoginProviderCell.swift */,
-				088927B22A6B2E8A007DFE0E /* ProfileView.swift */,
-				088927B42A6B3009007DFE0E /* MapView.swift */,
+				088927CE2A6B3DB3007DFE0E /* View Models */,
+				088927C92A6B3D18007DFE0E /* Models */,
+				088927C02A6B320F007DFE0E /* View */,
+				088927BD2A6B3188007DFE0E /* Helpers */,
 				088927B62A6B302D007DFE0E /* Config.xcconfig */,
 				088927852A6B2428007DFE0E /* Assets.xcassets */,
 				088927872A6B2428007DFE0E /* Preview Content */,
@@ -149,6 +163,45 @@
 				0889279E2A6B2428007DFE0E /* LeSnacksUITestsLaunchTests.swift */,
 			);
 			path = LeSnacksUITests;
+			sourceTree = "<group>";
+		};
+		088927BD2A6B3188007DFE0E /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				088927BE2A6B31AF007DFE0E /* LoginProviders.swift */,
+				088927CC2A6B3D78007DFE0E /* APIManager.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		088927C02A6B320F007DFE0E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				088927832A6B2427007DFE0E /* LoginView.swift */,
+				088927B02A6B2AA0007DFE0E /* LoginProviderCell.swift */,
+				088927C72A6B3BDA007DFE0E /* RepConnectView.swift */,
+				088927B42A6B3009007DFE0E /* MapView.swift */,
+				088927B22A6B2E8A007DFE0E /* ProfileView.swift */,
+				088927C32A6B33E6007DFE0E /* ChatListView.swift */,
+				088927C52A6B33EF007DFE0E /* ChatView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		088927C92A6B3D18007DFE0E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				088927CA2A6B3D35007DFE0E /* Restaurant.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		088927CE2A6B3DB3007DFE0E /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				088927CF2A6B3DD6007DFE0E /* RestaurantViewModel.swift */,
+			);
+			path = "View Models";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -291,8 +344,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				088927CB2A6B3D35007DFE0E /* Restaurant.swift in Sources */,
+				088927D02A6B3DD6007DFE0E /* RestaurantViewModel.swift in Sources */,
+				088927BF2A6B31AF007DFE0E /* LoginProviders.swift in Sources */,
 				088927B32A6B2E8A007DFE0E /* ProfileView.swift in Sources */,
 				088927B12A6B2AA0007DFE0E /* LoginProviderCell.swift in Sources */,
+				088927CD2A6B3D78007DFE0E /* APIManager.swift in Sources */,
+				088927C42A6B33E6007DFE0E /* ChatListView.swift in Sources */,
+				088927C82A6B3BDA007DFE0E /* RepConnectView.swift in Sources */,
+				088927C62A6B33EF007DFE0E /* ChatView.swift in Sources */,
 				088927B52A6B3009007DFE0E /* MapView.swift in Sources */,
 				088927842A6B2427007DFE0E /* LoginView.swift in Sources */,
 				088927822A6B2427007DFE0E /* LeSnacksApp.swift in Sources */,
@@ -334,6 +394,7 @@
 /* Begin XCBuildConfiguration section */
 		088927A02A6B2428007DFE0E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 088927B62A6B302D007DFE0E /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -394,6 +455,7 @@
 		};
 		088927A12A6B2428007DFE0E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 088927B62A6B302D007DFE0E /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -448,6 +510,7 @@
 		};
 		088927A32A6B2428007DFE0E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 088927B62A6B302D007DFE0E /* Config.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -477,6 +540,7 @@
 		};
 		088927A42A6B2428007DFE0E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 088927B62A6B302D007DFE0E /* Config.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -506,6 +570,7 @@
 		};
 		088927A62A6B2428007DFE0E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 088927B62A6B302D007DFE0E /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -526,6 +591,7 @@
 		};
 		088927A72A6B2428007DFE0E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 088927B62A6B302D007DFE0E /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -546,6 +612,7 @@
 		};
 		088927A92A6B2428007DFE0E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 088927B62A6B302D007DFE0E /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -564,6 +631,7 @@
 		};
 		088927AA2A6B2428007DFE0E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 088927B62A6B302D007DFE0E /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
