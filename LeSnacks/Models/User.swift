@@ -10,7 +10,7 @@ import Foundation
 // starter
 class User {
     let address: String
-    
+
     init(address: String) {
         self.address = address
     }

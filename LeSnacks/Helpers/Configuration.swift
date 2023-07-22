@@ -8,13 +8,9 @@
 import Foundation
 
 enum Configuration {
-
-    // MARK: - Helper Methods
-
     static func string(for key: String) -> String {
         let value = Bundle.main.object(forInfoDictionaryKey: key) as? String
         print("config \(key): \(value ?? "")")
         return value ?? ""
     }
-
 }

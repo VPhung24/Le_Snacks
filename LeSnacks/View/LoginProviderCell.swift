@@ -45,5 +45,3 @@ protocol LoginProviderCellModel {
     var icon: Image { get }
     var title: String { get }
 }
-
-

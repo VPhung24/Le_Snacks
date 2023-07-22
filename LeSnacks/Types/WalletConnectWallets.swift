@@ -11,7 +11,7 @@ import SnowballAssetKit
 enum Wallets: String, CaseIterable, LoginProviderCellModel {
     case rainbow
     case trust
-    
+
     var icon: Image {
         switch self {
         case .rainbow:
@@ -21,7 +21,7 @@ enum Wallets: String, CaseIterable, LoginProviderCellModel {
             return SnowballImage(.trust)
         }
     }
-    
+
     var title: String {
         return self.rawValue.capitalized(with: .current)
     }

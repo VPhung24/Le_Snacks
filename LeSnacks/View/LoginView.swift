@@ -11,9 +11,9 @@ import SnowballAssetKit
 
 struct LoginView: View {
     @State var showWalletConnectSheet: Bool = false
-    
+
     @StateObject var viewModel = AuthViewModel()
-    
+
     var body: some View {
         VStack {
             Spacer()
@@ -59,7 +59,6 @@ struct LoginView: View {
         }
     }
 }
-
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
