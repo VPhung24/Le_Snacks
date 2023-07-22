@@ -47,13 +47,14 @@
 		088928202A6B5530007DFE0E /* Starscream in Frameworks */ = {isa = PBXBuildFile; productRef = 0889281F2A6B5530007DFE0E /* Starscream */; };
 		088928232A6B55FB007DFE0E /* Web3 in Frameworks */ = {isa = PBXBuildFile; productRef = 088928222A6B55FB007DFE0E /* Web3 */; };
 		0889282A2A6B5B15007DFE0E /* HDWalletKit in Frameworks */ = {isa = PBXBuildFile; productRef = 088928292A6B5B15007DFE0E /* HDWalletKit */; };
-		0889282D2A6B5C48007DFE0E /* WalletConnectAuthCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0889282C2A6B5C48007DFE0E /* WalletConnectAuthCoordinator.swift */; };
 		0889282F2A6B5C5E007DFE0E /* WalletConnectAuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0889282E2A6B5C5E007DFE0E /* WalletConnectAuthView.swift */; };
 		088928312A6B5C70007DFE0E /* WalletConnectAuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088928302A6B5C70007DFE0E /* WalletConnectAuthViewModel.swift */; };
 		088928332A6B5D55007DFE0E /* WalletConnectQRCodeGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088928322A6B5D55007DFE0E /* WalletConnectQRCodeGenerator.swift */; };
 		08BD2C492A6B61440024A874 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 08BD2C482A6B61440024A874 /* .swiftlint.yml */; };
 		08BD2C4B2A6B62630024A874 /* WalletConnectDefaultCryptoProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08BD2C4A2A6B62630024A874 /* WalletConnectDefaultCryptoProvider.swift */; };
 		08BD2C4D2A6B628C0024A874 /* WalletConnectDefaultSocketFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08BD2C4C2A6B628C0024A874 /* WalletConnectDefaultSocketFactory.swift */; };
+		08BD2C552A6B79340024A874 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08BD2C542A6B79340024A874 /* AppDelegate.swift */; };
+		08BD2C572A6B79C40024A874 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08BD2C562A6B79C40024A874 /* SceneDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,13 +101,15 @@
 		088927CF2A6B3DD6007DFE0E /* RestaurantViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantViewModel.swift; sourceTree = "<group>"; };
 		0889281B2A6B5359007DFE0E /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 		0889281D2A6B53B2007DFE0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		0889282C2A6B5C48007DFE0E /* WalletConnectAuthCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletConnectAuthCoordinator.swift; sourceTree = "<group>"; };
 		0889282E2A6B5C5E007DFE0E /* WalletConnectAuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletConnectAuthView.swift; sourceTree = "<group>"; };
 		088928302A6B5C70007DFE0E /* WalletConnectAuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletConnectAuthViewModel.swift; sourceTree = "<group>"; };
 		088928322A6B5D55007DFE0E /* WalletConnectQRCodeGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletConnectQRCodeGenerator.swift; sourceTree = "<group>"; };
 		08BD2C482A6B61440024A874 /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = SOURCE_ROOT; };
 		08BD2C4A2A6B62630024A874 /* WalletConnectDefaultCryptoProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletConnectDefaultCryptoProvider.swift; sourceTree = "<group>"; };
 		08BD2C4C2A6B628C0024A874 /* WalletConnectDefaultSocketFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletConnectDefaultSocketFactory.swift; sourceTree = "<group>"; };
+		08BD2C532A6B780F0024A874 /* LeSnacks.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LeSnacks.entitlements; sourceTree = "<group>"; };
+		08BD2C542A6B79340024A874 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		08BD2C562A6B79C40024A874 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,7 +180,10 @@
 		088927802A6B2427007DFE0E /* LeSnacks */ = {
 			isa = PBXGroup;
 			children = (
+				08BD2C532A6B780F0024A874 /* LeSnacks.entitlements */,
 				088927812A6B2427007DFE0E /* LeSnacksApp.swift */,
+				08BD2C542A6B79340024A874 /* AppDelegate.swift */,
+				08BD2C562A6B79C40024A874 /* SceneDelegate.swift */,
 				088927CE2A6B3DB3007DFE0E /* View Models */,
 				088927C92A6B3D18007DFE0E /* Models */,
 				088927C02A6B320F007DFE0E /* View */,
@@ -272,7 +278,6 @@
 			children = (
 				08BD2C4C2A6B628C0024A874 /* WalletConnectDefaultSocketFactory.swift */,
 				08BD2C4A2A6B62630024A874 /* WalletConnectDefaultCryptoProvider.swift */,
-				0889282C2A6B5C48007DFE0E /* WalletConnectAuthCoordinator.swift */,
 				088928302A6B5C70007DFE0E /* WalletConnectAuthViewModel.swift */,
 				0889282E2A6B5C5E007DFE0E /* WalletConnectAuthView.swift */,
 				088928322A6B5D55007DFE0E /* WalletConnectQRCodeGenerator.swift */,
@@ -445,11 +450,12 @@
 				088927CB2A6B3D35007DFE0E /* Restaurant.swift in Sources */,
 				088927D02A6B3DD6007DFE0E /* RestaurantViewModel.swift in Sources */,
 				088927BF2A6B31AF007DFE0E /* LoginProviders.swift in Sources */,
-				0889282D2A6B5C48007DFE0E /* WalletConnectAuthCoordinator.swift in Sources */,
 				0889281C2A6B5359007DFE0E /* Configuration.swift in Sources */,
 				088927B32A6B2E8A007DFE0E /* ProfileView.swift in Sources */,
 				0889282F2A6B5C5E007DFE0E /* WalletConnectAuthView.swift in Sources */,
 				088927B12A6B2AA0007DFE0E /* LoginProviderCell.swift in Sources */,
+				08BD2C572A6B79C40024A874 /* SceneDelegate.swift in Sources */,
+				08BD2C552A6B79340024A874 /* AppDelegate.swift in Sources */,
 				088927CD2A6B3D78007DFE0E /* APIManager.swift in Sources */,
 				088927C42A6B33E6007DFE0E /* ChatListView.swift in Sources */,
 				088928332A6B5D55007DFE0E /* WalletConnectQRCodeGenerator.swift in Sources */,
@@ -619,6 +625,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = LeSnacks/LeSnacks.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"LeSnacks/Preview Content\"";
@@ -650,6 +657,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = LeSnacks/LeSnacks.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"LeSnacks/Preview Content\"";

@@ -9,6 +9,7 @@ import UIKit
 import Combine
 import Auth
 import WalletConnectPairing
+import WalletConnectModal
 
 final class WalletConnectAuthViewModel: ObservableObject {
 
@@ -57,6 +58,21 @@ final class WalletConnectAuthViewModel: ObservableObject {
 private extension WalletConnectAuthViewModel {
 
     func setupSubscriptions() {
+        Networking.configure(projectId: Configuration.string(for: "WALLET_CONNECT_PROJECT_ID"), socketFactory: DefaultSocketFactory())
+        Auth.configure(crypto: DefaultCryptoProvider())
+
+        let metadata = AppMetadata(
+            name: "Le Snacks",
+            description: "Snackssss",
+            url: "lesnacks.xyz",
+            icons: ["https://avatars.githubusercontent.com/u/37784886"]
+        )
+
+        WalletConnectModal.configure(
+            projectId: Configuration.string(for: "WALLET_CONNECT_PROJECT_ID"),
+            metadata: metadata
+        )
+
         Auth.instance.authResponsePublisher.sink { [weak self] (_, result) in
             switch result {
             case .success(let cacao):
