@@ -47,10 +47,10 @@ struct SwitchChainView: View {
 
         var name: String {
             switch self {
-                case .polygon: return "Polygon"
-                case .ethereum: return "Ethereum"
-                case .kovan: return "Kovan Testnet"
-                case .goerli: return "Goerli Testnet"
+            case .polygon: return "Polygon"
+            case .ethereum: return "Ethereum"
+            case .kovan: return "Kovan Testnet"
+            case .goerli: return "Goerli Testnet"
             }
         }
 
@@ -112,7 +112,7 @@ struct SwitchChainView: View {
         }
         .onAppear {
             networkSelection = ethereum.chainId == networkSelection.rawValue
-                ? .ethereum
+            ? .ethereum
             : .goerli
         }
         .background(Color.blue.grayscale(0.5))
@@ -193,8 +193,8 @@ struct SwitchChainView: View {
                 id: .success,
                 title: "Success",
                 message: ethereum.chainId == networkSelection.chainId
-                    ? "Successfully switched to \(networkSelection.name)"
-                    : "Successfully added \(networkSelection.name)",
+                ? "Successfully switched to \(networkSelection.name)"
+                : "Successfully added \(networkSelection.name)",
                 dismissButton: SwiftUI.Alert.Button.default(Text("OK"), action: {
                     presentationMode.wrappedValue.dismiss()
                 })

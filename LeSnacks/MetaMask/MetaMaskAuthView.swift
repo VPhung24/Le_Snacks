@@ -108,8 +108,7 @@ struct MetaMaskAuthView: View {
                                         showError = true
                                         print("Connection error: \(errorMessage)")
                                     case .finished:
-                                        print("something")
-                                    default: break
+                                        print("metamask connection finished")
                                     }
                                 }, receiveValue: { result in
                                     showProgressView = false
@@ -144,7 +143,7 @@ struct MetaMaskAuthView: View {
             .onReceive(NotificationCenter.default.publisher(for: .Connection)) { notification in
                 status = notification.userInfo?["value"] as? String ?? "Offline"
             }
-            .navigationTitle("Dub Dapp")
+            .navigationTitle("Le Snacks")
         }
     }
 }
