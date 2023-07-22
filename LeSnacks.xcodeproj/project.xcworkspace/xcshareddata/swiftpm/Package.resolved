@@ -28,6 +28,15 @@
       }
     },
     {
+      "identity" : "metamask-ios-sdk",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/VPhung24/metamask-ios-sdk.git",
+      "state" : {
+        "revision" : "2045dbb51e6f20713c0d81e7fbf2715d72e01c0f",
+        "version" : "0.0.1"
+      }
+    },
+    {
       "identity" : "nuke",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/kean/Nuke.git",
@@ -73,12 +82,21 @@
       }
     },
     {
+      "identity" : "socket.io-client-swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/socketio/socket.io-client-swift",
+      "state" : {
+        "revision" : "af5ce97b755d964235348d96f6db5cbdcbe334a5",
+        "version" : "16.0.1"
+      }
+    },
+    {
       "identity" : "starscream",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/daltoniam/Starscream.git",
       "state" : {
-        "revision" : "a063fda2b8145a231953c20e7a646be254365396",
-        "version" : "3.1.2"
+        "revision" : "df8d82047f6654d8e4b655d1b1525c64e1059d21",
+        "version" : "4.0.4"
       }
     },
     {

@@ -29,6 +29,21 @@ final class WalletConnectAuthViewModel: ObservableObject {
     }
 
     init() {
+        Networking.configure(projectId: Configuration.string(for: "WALLET_CONNECT_PROJECT_ID"), socketFactory: WalletConnectDefaultSocketFactory())
+        Auth.configure(crypto: WalletConnectDefaultCryptoProvider())
+
+        let metadata = AppMetadata(
+            name: "Le Snacks",
+            description: "Multi-connect reputation-based restaurant app",
+            url: "lesnacks.xyz",
+            icons: ["https://imagedelivery.net/_aTEfDRm7z3tKgu9JhfeKA/ffe133c7-910c-4793-e3aa-a564e7430d00/lg"]
+        )
+
+        WalletConnectModal.configure(
+            projectId: Configuration.string(for: "WALLET_CONNECT_PROJECT_ID"),
+            metadata: metadata
+        )
+                
         setupSubscriptions()
     }
 
@@ -58,21 +73,6 @@ final class WalletConnectAuthViewModel: ObservableObject {
 private extension WalletConnectAuthViewModel {
 
     func setupSubscriptions() {
-        Networking.configure(projectId: Configuration.string(for: "WALLET_CONNECT_PROJECT_ID"), socketFactory: DefaultSocketFactory())
-        Auth.configure(crypto: DefaultCryptoProvider())
-
-        let metadata = AppMetadata(
-            name: "Le Snacks",
-            description: "Multi-connect reputation-based restaurant app",
-            url: "lesnacks.xyz",
-            icons: ["https://imagedelivery.net/_aTEfDRm7z3tKgu9JhfeKA/ffe133c7-910c-4793-e3aa-a564e7430d00/lg"]
-        )
-
-        WalletConnectModal.configure(
-            projectId: Configuration.string(for: "WALLET_CONNECT_PROJECT_ID"),
-            metadata: metadata
-        )
-
         Auth.instance.authResponsePublisher.sink { [weak self] (_, result) in
             switch result {
             case .success(let cacao):

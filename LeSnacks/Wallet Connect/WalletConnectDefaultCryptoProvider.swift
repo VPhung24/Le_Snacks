@@ -11,7 +11,7 @@ import Web3
 import CryptoSwift
 import HDWalletKit
 
-struct DefaultCryptoProvider: CryptoProvider {
+struct WalletConnectDefaultCryptoProvider: CryptoProvider {
 
     public func recoverPubKey(signature: EthereumSignature, message: Data) throws -> Data {
         let publicKey = try EthereumPublicKey(
