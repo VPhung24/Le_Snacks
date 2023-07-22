@@ -29,7 +29,7 @@ class AuthViewModel: ObservableObject {
         }
     }
     
-    func authenticate(for provider: LeSnacksAuth, wallet: Wallets? = nil) {
+    func authenticate(for provider: AuthMethods, wallet: Wallets? = nil) {
         switch provider {
         case .metamask:
             ethereum.connect(dapp)?.sink(receiveCompletion: { [weak self] completion in

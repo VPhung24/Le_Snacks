@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0812D5452A6C17CA008881FE /* MetaMaskAuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0812D5442A6C17CA008881FE /* MetaMaskAuthView.swift */; };
 		0812D5492A6C182D008881FE /* LICENSE.md in Resources */ = {isa = PBXBuildFile; fileRef = 0812D5462A6C182D008881FE /* LICENSE.md */; };
 		0812D54A2A6C182D008881FE /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 0812D5472A6C182D008881FE /* .gitignore */; };
 		0812D54B2A6C182D008881FE /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 0812D5482A6C182D008881FE /* README.md */; };
@@ -17,17 +16,7 @@
 		0812D5552A6C194D008881FE /* Web3 in Frameworks */ = {isa = PBXBuildFile; productRef = 0812D5542A6C194D008881FE /* Web3 */; };
 		0812D5572A6C194D008881FE /* HDWalletKit in Frameworks */ = {isa = PBXBuildFile; productRef = 0812D5562A6C194D008881FE /* HDWalletKit */; };
 		083B13A72A6C23F8004AE99D /* metamask-ios-sdk in Frameworks */ = {isa = PBXBuildFile; productRef = 083B13A62A6C23F8004AE99D /* metamask-ios-sdk */; };
-		083B13B02A6C29E0004AE99D /* MetaMaskNetworkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 083B13A82A6C29DF004AE99D /* MetaMaskNetworkView.swift */; };
-		083B13B12A6C29E0004AE99D /* MetaMaskSwitchChainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 083B13A92A6C29E0004AE99D /* MetaMaskSwitchChainView.swift */; };
-		083B13B22A6C29E0004AE99D /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 083B13AA2A6C29E0004AE99D /* ViewExtension.swift */; };
-		083B13B32A6C29E0004AE99D /* MetaMaskTextStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 083B13AB2A6C29E0004AE99D /* MetaMaskTextStyle.swift */; };
-		083B13B42A6C29E0004AE99D /* MetaMaskToastOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 083B13AC2A6C29E0004AE99D /* MetaMaskToastOverlay.swift */; };
-		083B13B52A6C29E0004AE99D /* MetaMaskToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 083B13AD2A6C29E0004AE99D /* MetaMaskToastView.swift */; };
-		083B13B62A6C29E0004AE99D /* MetaMaskSignView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 083B13AE2A6C29E0004AE99D /* MetaMaskSignView.swift */; };
-		083B13B72A6C29E0004AE99D /* MetaMaskTransactionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 083B13AF2A6C29E0004AE99D /* MetaMaskTransactionView.swift */; };
-		083B13BA2A6C29F1004AE99D /* MetaMaskCurvature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 083B13B82A6C29F1004AE99D /* MetaMaskCurvature.swift */; };
-		083B13BB2A6C29F1004AE99D /* MetaMaskButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 083B13B92A6C29F1004AE99D /* MetaMaskButtonStyle.swift */; };
-		083B13BD2A6C32E3004AE99D /* LeSnacksAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 083B13BC2A6C32E3004AE99D /* LeSnacksAuth.swift */; };
+		083B13BD2A6C32E3004AE99D /* AuthMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 083B13BC2A6C32E3004AE99D /* AuthMethods.swift */; };
 		083B13BF2A6C3C7B004AE99D /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 083B13BE2A6C3C7B004AE99D /* SnapshotHelper.swift */; };
 		088927822A6B2427007DFE0E /* LeSnacksApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088927812A6B2427007DFE0E /* LeSnacksApp.swift */; };
 		088927842A6B2427007DFE0E /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088927832A6B2427007DFE0E /* LoginView.swift */; };
@@ -55,6 +44,7 @@
 		089D7CEF2A6C453600B5BA59 /* WalletConnectPairing in Frameworks */ = {isa = PBXBuildFile; productRef = 089D7CEE2A6C453600B5BA59 /* WalletConnectPairing */; };
 		08B9FE042A6C7ECC00A139CC /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08B9FE032A6C7ECC00A139CC /* AuthViewModel.swift */; };
 		08B9FE062A6C908600A139CC /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08B9FE052A6C908600A139CC /* User.swift */; };
+		08B9FE082A6C920600A139CC /* WalletConnectWallets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08B9FE072A6C920600A139CC /* WalletConnectWallets.swift */; };
 		08BD2C492A6B61440024A874 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 08BD2C482A6B61440024A874 /* .swiftlint.yml */; };
 		08BD2C4B2A6B62630024A874 /* WalletConnectDefaultCryptoProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08BD2C4A2A6B62630024A874 /* WalletConnectDefaultCryptoProvider.swift */; };
 		08BD2C4D2A6B628C0024A874 /* WalletConnectDefaultSocketFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08BD2C4C2A6B628C0024A874 /* WalletConnectDefaultSocketFactory.swift */; };
@@ -80,21 +70,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0812D5442A6C17CA008881FE /* MetaMaskAuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetaMaskAuthView.swift; sourceTree = "<group>"; };
 		0812D5462A6C182D008881FE /* LICENSE.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = SOURCE_ROOT; };
 		0812D5472A6C182D008881FE /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = SOURCE_ROOT; };
 		0812D5482A6C182D008881FE /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
-		083B13A82A6C29DF004AE99D /* MetaMaskNetworkView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetaMaskNetworkView.swift; sourceTree = "<group>"; };
-		083B13A92A6C29E0004AE99D /* MetaMaskSwitchChainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetaMaskSwitchChainView.swift; sourceTree = "<group>"; };
-		083B13AA2A6C29E0004AE99D /* ViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
-		083B13AB2A6C29E0004AE99D /* MetaMaskTextStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetaMaskTextStyle.swift; sourceTree = "<group>"; };
-		083B13AC2A6C29E0004AE99D /* MetaMaskToastOverlay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetaMaskToastOverlay.swift; sourceTree = "<group>"; };
-		083B13AD2A6C29E0004AE99D /* MetaMaskToastView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetaMaskToastView.swift; sourceTree = "<group>"; };
-		083B13AE2A6C29E0004AE99D /* MetaMaskSignView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetaMaskSignView.swift; sourceTree = "<group>"; };
-		083B13AF2A6C29E0004AE99D /* MetaMaskTransactionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetaMaskTransactionView.swift; sourceTree = "<group>"; };
-		083B13B82A6C29F1004AE99D /* MetaMaskCurvature.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetaMaskCurvature.swift; sourceTree = "<group>"; };
-		083B13B92A6C29F1004AE99D /* MetaMaskButtonStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetaMaskButtonStyle.swift; sourceTree = "<group>"; };
-		083B13BC2A6C32E3004AE99D /* LeSnacksAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeSnacksAuth.swift; sourceTree = "<group>"; };
+		083B13BC2A6C32E3004AE99D /* AuthMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthMethods.swift; sourceTree = "<group>"; };
 		083B13BE2A6C3C7B004AE99D /* SnapshotHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapshotHelper.swift; sourceTree = "<group>"; };
 		0889277E2A6B2427007DFE0E /* LeSnacks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LeSnacks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		088927812A6B2427007DFE0E /* LeSnacksApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeSnacksApp.swift; sourceTree = "<group>"; };
@@ -124,6 +103,7 @@
 		088928322A6B5D55007DFE0E /* WalletConnectQRCodeGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletConnectQRCodeGenerator.swift; sourceTree = "<group>"; };
 		08B9FE032A6C7ECC00A139CC /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
 		08B9FE052A6C908600A139CC /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		08B9FE072A6C920600A139CC /* WalletConnectWallets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletConnectWallets.swift; sourceTree = "<group>"; };
 		08BD2C482A6B61440024A874 /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = SOURCE_ROOT; };
 		08BD2C4A2A6B62630024A874 /* WalletConnectDefaultCryptoProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletConnectDefaultCryptoProvider.swift; sourceTree = "<group>"; };
 		08BD2C4C2A6B628C0024A874 /* WalletConnectDefaultSocketFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletConnectDefaultSocketFactory.swift; sourceTree = "<group>"; };
@@ -166,23 +146,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0812D5432A6C17B2008881FE /* MetaMask */ = {
-			isa = PBXGroup;
-			children = (
-				0812D5442A6C17CA008881FE /* MetaMaskAuthView.swift */,
-				083B13A82A6C29DF004AE99D /* MetaMaskNetworkView.swift */,
-				083B13B92A6C29F1004AE99D /* MetaMaskButtonStyle.swift */,
-				083B13B82A6C29F1004AE99D /* MetaMaskCurvature.swift */,
-				083B13AE2A6C29E0004AE99D /* MetaMaskSignView.swift */,
-				083B13A92A6C29E0004AE99D /* MetaMaskSwitchChainView.swift */,
-				083B13AB2A6C29E0004AE99D /* MetaMaskTextStyle.swift */,
-				083B13AC2A6C29E0004AE99D /* MetaMaskToastOverlay.swift */,
-				083B13AD2A6C29E0004AE99D /* MetaMaskToastView.swift */,
-				083B13AF2A6C29E0004AE99D /* MetaMaskTransactionView.swift */,
-			);
-			path = MetaMask;
-			sourceTree = "<group>";
-		};
 		088927752A6B2427007DFE0E = {
 			isa = PBXGroup;
 			children = (
@@ -214,7 +177,6 @@
 				088927CE2A6B3DB3007DFE0E /* View Models */,
 				088927C92A6B3D18007DFE0E /* Models */,
 				088927C02A6B320F007DFE0E /* View */,
-				0812D5432A6C17B2008881FE /* MetaMask */,
 				0889282B2A6B5C33007DFE0E /* Wallet Connect */,
 				088927BD2A6B3188007DFE0E /* Helpers */,
 				088927852A6B2428007DFE0E /* Assets.xcassets */,
@@ -261,8 +223,8 @@
 				088927BE2A6B31AF007DFE0E /* LoginProviders.swift */,
 				0889281B2A6B5359007DFE0E /* Configuration.swift */,
 				088927CC2A6B3D78007DFE0E /* APIManager.swift */,
-				083B13AA2A6C29E0004AE99D /* ViewExtension.swift */,
-				083B13BC2A6C32E3004AE99D /* LeSnacksAuth.swift */,
+				083B13BC2A6C32E3004AE99D /* AuthMethods.swift */,
+				08B9FE072A6C920600A139CC /* WalletConnectWallets.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -488,25 +450,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				088927CB2A6B3D35007DFE0E /* Restaurant.swift in Sources */,
-				0812D5452A6C17CA008881FE /* MetaMaskAuthView.swift in Sources */,
 				088927D02A6B3DD6007DFE0E /* RestaurantViewModel.swift in Sources */,
 				088927BF2A6B31AF007DFE0E /* LoginProviders.swift in Sources */,
-				083B13B72A6C29E0004AE99D /* MetaMaskTransactionView.swift in Sources */,
-				083B13B42A6C29E0004AE99D /* MetaMaskToastOverlay.swift in Sources */,
 				0889281C2A6B5359007DFE0E /* Configuration.swift in Sources */,
-				083B13B02A6C29E0004AE99D /* MetaMaskNetworkView.swift in Sources */,
-				083B13B22A6C29E0004AE99D /* ViewExtension.swift in Sources */,
 				088927B32A6B2E8A007DFE0E /* ProfileView.swift in Sources */,
-				083B13B62A6C29E0004AE99D /* MetaMaskSignView.swift in Sources */,
 				0889282F2A6B5C5E007DFE0E /* WalletConnectAuthView.swift in Sources */,
 				088927B12A6B2AA0007DFE0E /* LoginProviderCell.swift in Sources */,
-				083B13B32A6C29E0004AE99D /* MetaMaskTextStyle.swift in Sources */,
-				083B13BD2A6C32E3004AE99D /* LeSnacksAuth.swift in Sources */,
+				083B13BD2A6C32E3004AE99D /* AuthMethods.swift in Sources */,
 				08BD2C572A6B79C40024A874 /* SceneDelegate.swift in Sources */,
 				08BD2C552A6B79340024A874 /* AppDelegate.swift in Sources */,
 				088927CD2A6B3D78007DFE0E /* APIManager.swift in Sources */,
 				088927C42A6B33E6007DFE0E /* ChatListView.swift in Sources */,
-				083B13B52A6C29E0004AE99D /* MetaMaskToastView.swift in Sources */,
 				088928332A6B5D55007DFE0E /* WalletConnectQRCodeGenerator.swift in Sources */,
 				088927C82A6B3BDA007DFE0E /* RepConnectView.swift in Sources */,
 				08BD2C4B2A6B62630024A874 /* WalletConnectDefaultCryptoProvider.swift in Sources */,
@@ -515,10 +469,8 @@
 				08BD2C4D2A6B628C0024A874 /* WalletConnectDefaultSocketFactory.swift in Sources */,
 				088927B52A6B3009007DFE0E /* MapView.swift in Sources */,
 				088927842A6B2427007DFE0E /* LoginView.swift in Sources */,
-				083B13B12A6C29E0004AE99D /* MetaMaskSwitchChainView.swift in Sources */,
-				083B13BB2A6C29F1004AE99D /* MetaMaskButtonStyle.swift in Sources */,
+				08B9FE082A6C920600A139CC /* WalletConnectWallets.swift in Sources */,
 				08B9FE042A6C7ECC00A139CC /* AuthViewModel.swift in Sources */,
-				083B13BA2A6C29F1004AE99D /* MetaMaskCurvature.swift in Sources */,
 				088927822A6B2427007DFE0E /* LeSnacksApp.swift in Sources */,
 				088928312A6B5C70007DFE0E /* WalletConnectAuthViewModel.swift in Sources */,
 			);

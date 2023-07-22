@@ -35,7 +35,7 @@ struct LoginProviderCell<T: LoginProviderCellModel>: View {
 
 struct LoginProviderCell_Previews: PreviewProvider {
     static var previews: some View {
-        LoginProviderCell<LeSnacksAuth>(provider: .metamask)
+        LoginProviderCell<AuthMethods>(provider: .metamask)
             .padding()
             .previewLayout(.sizeThatFits)
     }

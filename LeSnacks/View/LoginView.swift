@@ -10,7 +10,6 @@ import SnowballSwiftKit
 import SnowballAssetKit
 
 struct LoginView: View {
-    @State var presentAuthView: LeSnacksAuth = .none
     @State var showWalletConnectSheet: Bool = false
     
     @StateObject var viewModel = AuthViewModel()
@@ -33,7 +32,7 @@ struct LoginView: View {
                 }
                 .frame(maxWidth: .infinity, alignment: .topLeading)
 
-                ForEach(LeSnacksAuth.allCases, id: \.self) { auth in
+                ForEach(AuthMethods.allCases, id: \.self) { auth in
                     LoginProviderCell(provider: auth)
                         .onTapGesture {
                             if auth == .walletconnect {
