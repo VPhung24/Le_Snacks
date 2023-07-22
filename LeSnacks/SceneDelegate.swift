@@ -34,4 +34,12 @@ class SceneDelegate: NSObject, UIWindowSceneDelegate {
     func sceneDidEnterBackground(_ scene: UIScene) {
 
     }
+
+    func scene(_ scene: UIScene, openURLContexts URLContexts: Set<UIOpenURLContext>) {
+        guard let firstUrl = URLContexts.first?.url else {
+            return
+        }
+
+        print(firstUrl.absoluteString)
+    }
 }

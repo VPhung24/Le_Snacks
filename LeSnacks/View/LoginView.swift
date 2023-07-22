@@ -33,12 +33,12 @@ struct LoginView: View {
                     .frame(maxWidth: .infinity, alignment: .topLeading)
 
                     VStack {
-                        LoginProviderCell(userIsAuthenticated: $presentAuthView, provider: LoginProvider(.metamask))
-                        LoginProviderCell(userIsAuthenticated: $presentAuthView, provider: LoginProvider(.walletConnect))
+                        LoginProviderCell(presentAuthView: $presentAuthView, provider: LoginProvider(.metamask))
+                        LoginProviderCell(presentAuthView: $presentAuthView, provider: LoginProvider(.walletConnect))
 
                         // to do: gnosis
-                        LoginProviderCell(userIsAuthenticated: $presentAuthView, provider: LoginProvider(.walletConnect))
-                        LoginProviderCell(userIsAuthenticated: $presentAuthView, provider: LoginProvider(.snowball))
+                        LoginProviderCell(presentAuthView: $presentAuthView, provider: LoginProvider(.walletConnect))
+                        LoginProviderCell(presentAuthView: $presentAuthView, provider: LoginProvider(.snowball))
                     }
                 }
             }

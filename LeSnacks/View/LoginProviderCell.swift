@@ -9,7 +9,7 @@ import SwiftUI
 import SnowballAssetKit
 
 struct LoginProviderCell: View {
-    @Binding var userIsAuthenticated: Bool
+    @Binding var presentAuthView: Bool
     let provider: LoginProvider
 
     var body: some View {
@@ -32,14 +32,14 @@ struct LoginProviderCell: View {
         .background(Color(UIColor.tertiarySystemFill))
         .cornerRadius(12)
         .onTapGesture {
-            userIsAuthenticated = true
+            presentAuthView = true
         }
     }
 }
 
 struct LoginProviderCell_Previews: PreviewProvider {
     static var previews: some View {
-        LoginProviderCell(userIsAuthenticated: .constant(false), provider: LoginProvider(.metamask))
+        LoginProviderCell(presentAuthView: .constant(false), provider: LoginProvider(.metamask))
             .padding()
             .previewLayout(.sizeThatFits)
     }

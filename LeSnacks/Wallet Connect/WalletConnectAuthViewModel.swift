@@ -63,9 +63,9 @@ private extension WalletConnectAuthViewModel {
 
         let metadata = AppMetadata(
             name: "Le Snacks",
-            description: "Snackssss",
+            description: "Multi-connect reputation-based restaurant app",
             url: "lesnacks.xyz",
-            icons: ["https://avatars.githubusercontent.com/u/37784886"]
+            icons: ["https://imagedelivery.net/_aTEfDRm7z3tKgu9JhfeKA/ffe133c7-910c-4793-e3aa-a564e7430d00/lg"]
         )
 
         WalletConnectModal.configure(
