@@ -44,7 +44,7 @@ class RestaurantAnnotation: NSObject, MKAnnotation {
         self.title = restaurant.name
         self.cuisine = restaurant.cuisine
         self.coordinate = CLLocationCoordinate2D(latitude: restaurant.geolocation.latitude, longitude: restaurant.geolocation.longitude)
-        
+
         super.init()
     }
 }

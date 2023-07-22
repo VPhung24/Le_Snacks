@@ -14,7 +14,7 @@ public class RestaurantViewModel<T: Codable>: ObservableObject {
     init() {
         self.fetch()
     }
-    
+
     func fetch() {
         let networkRequest = apiManager.networkRequest(baseURL: "https://snacks-dgdkv43unq-no.a.run.app/",
                                                        endpoint: RestaurantEndpoints.all)
@@ -35,7 +35,7 @@ public class RestaurantViewModel<T: Codable>: ObservableObject {
 
 enum RestaurantEndpoints: Endpoint {
     case all
-    
+
     var path: String {
         switch self {
         case .all:
@@ -47,4 +47,3 @@ enum RestaurantEndpoints: Endpoint {
         return .GET
     }
 }
-

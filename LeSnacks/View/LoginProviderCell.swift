@@ -11,17 +11,17 @@ import SnowballAssetKit
 struct LoginProviderCell: View {
     @Binding var userIsAuthenticated: Bool
     let provider: LoginProvider
-    
+
     var body: some View {
         HStack(alignment: .center, spacing: 12) {
             // to do: fix coloring
             SnowballImage(provider.icon)
-            
+
             Text(provider.title.capitalized(with: .current))
                 .foregroundColor(.primary)
                 .font(.subheadline)
                 .frame(maxWidth: .infinity, alignment: .leading)
-            
+
             Image(systemName: "arrow.up.right")
                 .foregroundColor(Color(UIColor.quaternaryLabel))
                 .font(.subheadline)

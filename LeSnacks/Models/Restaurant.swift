@@ -15,7 +15,7 @@ struct Restaurant: Codable, Identifiable {
     let cuisine: String
     let address: String
     let geolocation: Geolocation
-    
+
     var id: String { url }
 }
 

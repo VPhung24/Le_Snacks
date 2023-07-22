@@ -10,8 +10,9 @@ import SnowballSwiftKit
 import SnowballAssetKit
 
 struct LoginView: View {
-    @State var presentMapView: Bool = false
-    
+    @State var presentAuthView: Bool = false
+    @StateObject private var viewModel = WalletConnectAuthViewModel()
+
     var body: some View {
         NavigationStack {
             VStack {
@@ -23,27 +24,27 @@ struct LoginView: View {
                             .kerning(0.36)
                             .foregroundColor(.primary)
                             .frame(maxWidth: .infinity, alignment: .topLeading)
-                        
+
                         Text("Don't have an account? We'll make one for you")
                             .font(.subheadline)
                             .foregroundColor(Color(UIColor.secondaryLabel))
                             .frame(maxWidth: .infinity, alignment: .topLeading)
                     }
                     .frame(maxWidth: .infinity, alignment: .topLeading)
-                    
+
                     VStack {
-                        LoginProviderCell(userIsAuthenticated: $presentMapView, provider: LoginProvider(.metamask))
-                        LoginProviderCell(userIsAuthenticated: $presentMapView, provider: LoginProvider(.walletConnect))
-                        
+                        LoginProviderCell(userIsAuthenticated: $presentAuthView, provider: LoginProvider(.metamask))
+                        LoginProviderCell(userIsAuthenticated: $presentAuthView, provider: LoginProvider(.walletConnect))
+
                         // to do: gnosis
-                        LoginProviderCell(userIsAuthenticated: $presentMapView, provider: LoginProvider(.walletConnect))
-                        LoginProviderCell(userIsAuthenticated: $presentMapView, provider: LoginProvider(.snowball))
+                        LoginProviderCell(userIsAuthenticated: $presentAuthView, provider: LoginProvider(.walletConnect))
+                        LoginProviderCell(userIsAuthenticated: $presentAuthView, provider: LoginProvider(.snowball))
                     }
                 }
             }
             .padding()
-            .navigationDestination(isPresented: $presentMapView) {
-                MapView()
+            .sheet(isPresented: $presentAuthView) {
+                WalletConnectAuthView(viewModel: viewModel)
             }
         }
     }
