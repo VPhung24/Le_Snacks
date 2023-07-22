@@ -8,9 +8,8 @@
 import SwiftUI
 import SnowballAssetKit
 
-struct LoginProviderCell: View {
-    @Binding var presentAuthType: LeSnacksAuth
-    let provider: LeSnacksAuth
+struct LoginProviderCell<T: LoginProviderCellModel>: View {
+    let provider: T
 
     var body: some View {
         HStack(alignment: .center, spacing: 12) {
@@ -31,16 +30,20 @@ struct LoginProviderCell: View {
         .frame(maxWidth: .infinity, alignment: .leading)
         .background(Color(UIColor.tertiarySystemFill))
         .cornerRadius(12)
-        .onTapGesture {
-            presentAuthType = provider
-        }
     }
 }
 
 struct LoginProviderCell_Previews: PreviewProvider {
     static var previews: some View {
-        LoginProviderCell(presentAuthType: .constant(.metamask), provider: .metamask)
+        LoginProviderCell<LeSnacksAuth>(provider: .metamask)
             .padding()
             .previewLayout(.sizeThatFits)
     }
 }
+
+protocol LoginProviderCellModel {
+    var icon: Image { get }
+    var title: String { get }
+}
+
+

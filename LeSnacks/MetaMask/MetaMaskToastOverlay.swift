@@ -19,7 +19,6 @@ struct MetaMaskToastOverlay<ToastContent>: View where ToastContent: View {
                     Spacer()
                     content
                         .frame(width: geometry.size.width * 0.8, height: 8)
-                        .animation(.easeIn)
                     Spacer()
                 }
                 Spacer()

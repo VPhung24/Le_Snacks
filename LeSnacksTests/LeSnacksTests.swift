@@ -7,6 +7,7 @@
 
 import XCTest
 @testable import LeSnacks
+import secp256k1
 
 final class LeSnacksTests: XCTestCase {
 

@@ -11,8 +11,10 @@ import SnowballAssetKit
 
 struct LoginView: View {
     @State var presentAuthView: LeSnacksAuth = .none
-    @StateObject private var viewModel = WalletConnectAuthViewModel()
-
+    @State var showWalletConnectSheet: Bool = false
+    
+    @StateObject var viewModel = AuthViewModel()
+    
     var body: some View {
         VStack {
             Spacer()
@@ -31,25 +33,34 @@ struct LoginView: View {
                 }
                 .frame(maxWidth: .infinity, alignment: .topLeading)
 
-                ForEach(LeSnacksAuth.allCases.dropLast(), id: \.self) { auth in
-                    LoginProviderCell(presentAuthType: $presentAuthView, provider: auth)
+                ForEach(LeSnacksAuth.allCases, id: \.self) { auth in
+                    LoginProviderCell(provider: auth)
+                        .onTapGesture {
+                            if auth == .walletconnect {
+                                viewModel.setupWalletConnectInitialState()
+                                showWalletConnectSheet = true
+                            } else {
+                                viewModel.authenticate(for: auth)
+                            }
+                        }
                 }
             }
         }
         .padding()
-        .sheet(isPresented: .constant(presentAuthView != .none)) {
-            switch presentAuthView {
-            case .metamask:
-                MetaMaskAuthView()
-            case .walletconnect:
-                WalletConnectAuthView(viewModel: viewModel)
-            default:
-                Text("Snowball Auth")
+        .sheet(isPresented: $showWalletConnectSheet) {
+            VStack {
+                ForEach(Wallets.allCases, id: \.self) { wallet in
+                    LoginProviderCell(provider: wallet)
+                        .onTapGesture {
+                            viewModel.authenticate(for: .walletconnect, wallet: wallet)
+                        }
+                }
             }
-
+            .padding()
         }
     }
 }
+
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {

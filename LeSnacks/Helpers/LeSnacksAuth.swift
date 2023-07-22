@@ -8,7 +8,7 @@
 import SwiftUI
 import SnowballAssetKit
 
-enum LeSnacksAuth: CaseIterable {
+enum LeSnacksAuth: CaseIterable, Hashable, LoginProviderCellModel {
     case metamask
     case walletconnect
     case snowball
@@ -38,5 +38,24 @@ enum LeSnacksAuth: CaseIterable {
         default:
             return ""
         }
+    }
+}
+
+enum Wallets: String, CaseIterable, LoginProviderCellModel {
+    case rainbow
+    case trust
+    
+    var icon: Image {
+        switch self {
+        case .rainbow:
+            // to do add icon
+            return SnowballImage(.ledger)
+        case .trust:
+            return SnowballImage(.trust)
+        }
+    }
+    
+    var title: String {
+        return self.rawValue.capitalized(with: .current)
     }
 }

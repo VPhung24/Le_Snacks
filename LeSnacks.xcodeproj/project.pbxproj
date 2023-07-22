@@ -13,12 +13,9 @@
 		0812D54B2A6C182D008881FE /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 0812D5482A6C182D008881FE /* README.md */; };
 		0812D54D2A6C194D008881FE /* SnowballAssetKit in Frameworks */ = {isa = PBXBuildFile; productRef = 0812D54C2A6C194D008881FE /* SnowballAssetKit */; };
 		0812D54F2A6C194D008881FE /* SnowballSwiftKit in Frameworks */ = {isa = PBXBuildFile; productRef = 0812D54E2A6C194D008881FE /* SnowballSwiftKit */; };
-		0812D5512A6C194D008881FE /* WalletConnectAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 0812D5502A6C194D008881FE /* WalletConnectAuth */; };
 		0812D5532A6C194D008881FE /* Starscream in Frameworks */ = {isa = PBXBuildFile; productRef = 0812D5522A6C194D008881FE /* Starscream */; };
 		0812D5552A6C194D008881FE /* Web3 in Frameworks */ = {isa = PBXBuildFile; productRef = 0812D5542A6C194D008881FE /* Web3 */; };
 		0812D5572A6C194D008881FE /* HDWalletKit in Frameworks */ = {isa = PBXBuildFile; productRef = 0812D5562A6C194D008881FE /* HDWalletKit */; };
-		0812D5592A6C1972008881FE /* WalletConnectModal in Frameworks */ = {isa = PBXBuildFile; productRef = 0812D5582A6C1972008881FE /* WalletConnectModal */; };
-		0812D55B2A6C1972008881FE /* WalletConnectPairing in Frameworks */ = {isa = PBXBuildFile; productRef = 0812D55A2A6C1972008881FE /* WalletConnectPairing */; };
 		083B13A72A6C23F8004AE99D /* metamask-ios-sdk in Frameworks */ = {isa = PBXBuildFile; productRef = 083B13A62A6C23F8004AE99D /* metamask-ios-sdk */; };
 		083B13B02A6C29E0004AE99D /* MetaMaskNetworkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 083B13A82A6C29DF004AE99D /* MetaMaskNetworkView.swift */; };
 		083B13B12A6C29E0004AE99D /* MetaMaskSwitchChainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 083B13A92A6C29E0004AE99D /* MetaMaskSwitchChainView.swift */; };
@@ -31,6 +28,7 @@
 		083B13BA2A6C29F1004AE99D /* MetaMaskCurvature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 083B13B82A6C29F1004AE99D /* MetaMaskCurvature.swift */; };
 		083B13BB2A6C29F1004AE99D /* MetaMaskButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 083B13B92A6C29F1004AE99D /* MetaMaskButtonStyle.swift */; };
 		083B13BD2A6C32E3004AE99D /* LeSnacksAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 083B13BC2A6C32E3004AE99D /* LeSnacksAuth.swift */; };
+		083B13BF2A6C3C7B004AE99D /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 083B13BE2A6C3C7B004AE99D /* SnapshotHelper.swift */; };
 		088927822A6B2427007DFE0E /* LeSnacksApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088927812A6B2427007DFE0E /* LeSnacksApp.swift */; };
 		088927842A6B2427007DFE0E /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088927832A6B2427007DFE0E /* LoginView.swift */; };
 		088927862A6B2428007DFE0E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 088927852A6B2428007DFE0E /* Assets.xcassets */; };
@@ -52,6 +50,11 @@
 		0889282F2A6B5C5E007DFE0E /* WalletConnectAuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0889282E2A6B5C5E007DFE0E /* WalletConnectAuthView.swift */; };
 		088928312A6B5C70007DFE0E /* WalletConnectAuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088928302A6B5C70007DFE0E /* WalletConnectAuthViewModel.swift */; };
 		088928332A6B5D55007DFE0E /* WalletConnectQRCodeGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088928322A6B5D55007DFE0E /* WalletConnectQRCodeGenerator.swift */; };
+		089D7CEB2A6C44DC00B5BA59 /* WalletConnectAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 089D7CEA2A6C44DC00B5BA59 /* WalletConnectAuth */; };
+		089D7CED2A6C44DC00B5BA59 /* WalletConnectModal in Frameworks */ = {isa = PBXBuildFile; productRef = 089D7CEC2A6C44DC00B5BA59 /* WalletConnectModal */; };
+		089D7CEF2A6C453600B5BA59 /* WalletConnectPairing in Frameworks */ = {isa = PBXBuildFile; productRef = 089D7CEE2A6C453600B5BA59 /* WalletConnectPairing */; };
+		08B9FE042A6C7ECC00A139CC /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08B9FE032A6C7ECC00A139CC /* AuthViewModel.swift */; };
+		08B9FE062A6C908600A139CC /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08B9FE052A6C908600A139CC /* User.swift */; };
 		08BD2C492A6B61440024A874 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 08BD2C482A6B61440024A874 /* .swiftlint.yml */; };
 		08BD2C4B2A6B62630024A874 /* WalletConnectDefaultCryptoProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08BD2C4A2A6B62630024A874 /* WalletConnectDefaultCryptoProvider.swift */; };
 		08BD2C4D2A6B628C0024A874 /* WalletConnectDefaultSocketFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08BD2C4C2A6B628C0024A874 /* WalletConnectDefaultSocketFactory.swift */; };
@@ -92,6 +95,7 @@
 		083B13B82A6C29F1004AE99D /* MetaMaskCurvature.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetaMaskCurvature.swift; sourceTree = "<group>"; };
 		083B13B92A6C29F1004AE99D /* MetaMaskButtonStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetaMaskButtonStyle.swift; sourceTree = "<group>"; };
 		083B13BC2A6C32E3004AE99D /* LeSnacksAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeSnacksAuth.swift; sourceTree = "<group>"; };
+		083B13BE2A6C3C7B004AE99D /* SnapshotHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapshotHelper.swift; sourceTree = "<group>"; };
 		0889277E2A6B2427007DFE0E /* LeSnacks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LeSnacks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		088927812A6B2427007DFE0E /* LeSnacksApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeSnacksApp.swift; sourceTree = "<group>"; };
 		088927832A6B2427007DFE0E /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
@@ -118,6 +122,8 @@
 		0889282E2A6B5C5E007DFE0E /* WalletConnectAuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletConnectAuthView.swift; sourceTree = "<group>"; };
 		088928302A6B5C70007DFE0E /* WalletConnectAuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletConnectAuthViewModel.swift; sourceTree = "<group>"; };
 		088928322A6B5D55007DFE0E /* WalletConnectQRCodeGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletConnectQRCodeGenerator.swift; sourceTree = "<group>"; };
+		08B9FE032A6C7ECC00A139CC /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		08B9FE052A6C908600A139CC /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		08BD2C482A6B61440024A874 /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = SOURCE_ROOT; };
 		08BD2C4A2A6B62630024A874 /* WalletConnectDefaultCryptoProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletConnectDefaultCryptoProvider.swift; sourceTree = "<group>"; };
 		08BD2C4C2A6B628C0024A874 /* WalletConnectDefaultSocketFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletConnectDefaultSocketFactory.swift; sourceTree = "<group>"; };
@@ -132,14 +138,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				0812D54D2A6C194D008881FE /* SnowballAssetKit in Frameworks */,
-				0812D55B2A6C1972008881FE /* WalletConnectPairing in Frameworks */,
-				0812D5592A6C1972008881FE /* WalletConnectModal in Frameworks */,
 				0812D54F2A6C194D008881FE /* SnowballSwiftKit in Frameworks */,
-				0812D5512A6C194D008881FE /* WalletConnectAuth in Frameworks */,
+				089D7CED2A6C44DC00B5BA59 /* WalletConnectModal in Frameworks */,
 				0812D5532A6C194D008881FE /* Starscream in Frameworks */,
+				089D7CEF2A6C453600B5BA59 /* WalletConnectPairing in Frameworks */,
 				0812D5572A6C194D008881FE /* HDWalletKit in Frameworks */,
 				0812D5552A6C194D008881FE /* Web3 in Frameworks */,
 				083B13A72A6C23F8004AE99D /* metamask-ios-sdk in Frameworks */,
+				089D7CEB2A6C44DC00B5BA59 /* WalletConnectAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,6 +249,7 @@
 			isa = PBXGroup;
 			children = (
 				0889279C2A6B2428007DFE0E /* LeSnacksUITests.swift */,
+				083B13BE2A6C3C7B004AE99D /* SnapshotHelper.swift */,
 				0889279E2A6B2428007DFE0E /* LeSnacksUITestsLaunchTests.swift */,
 			);
 			path = LeSnacksUITests;
@@ -263,13 +270,12 @@
 		088927C02A6B320F007DFE0E /* View */ = {
 			isa = PBXGroup;
 			children = (
+				08B9FE022A6C7E9200A139CC /* Chat */,
+				08B9FE012A6C7D9000A139CC /* Map */,
 				088927832A6B2427007DFE0E /* LoginView.swift */,
 				088927B02A6B2AA0007DFE0E /* LoginProviderCell.swift */,
 				088927C72A6B3BDA007DFE0E /* RepConnectView.swift */,
-				088927B42A6B3009007DFE0E /* MapView.swift */,
 				088927B22A6B2E8A007DFE0E /* ProfileView.swift */,
-				088927C32A6B33E6007DFE0E /* ChatListView.swift */,
-				088927C52A6B33EF007DFE0E /* ChatView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -278,6 +284,7 @@
 			isa = PBXGroup;
 			children = (
 				088927CA2A6B3D35007DFE0E /* Restaurant.swift */,
+				08B9FE052A6C908600A139CC /* User.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -286,6 +293,7 @@
 			isa = PBXGroup;
 			children = (
 				088927CF2A6B3DD6007DFE0E /* RestaurantViewModel.swift */,
+				08B9FE032A6C7ECC00A139CC /* AuthViewModel.swift */,
 			);
 			path = "View Models";
 			sourceTree = "<group>";
@@ -309,6 +317,23 @@
 			path = "Wallet Connect";
 			sourceTree = "<group>";
 		};
+		08B9FE012A6C7D9000A139CC /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				088927B42A6B3009007DFE0E /* MapView.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		08B9FE022A6C7E9200A139CC /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				088927C32A6B33E6007DFE0E /* ChatListView.swift */,
+				088927C52A6B33EF007DFE0E /* ChatView.swift */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -328,13 +353,13 @@
 			packageProductDependencies = (
 				0812D54C2A6C194D008881FE /* SnowballAssetKit */,
 				0812D54E2A6C194D008881FE /* SnowballSwiftKit */,
-				0812D5502A6C194D008881FE /* WalletConnectAuth */,
 				0812D5522A6C194D008881FE /* Starscream */,
 				0812D5542A6C194D008881FE /* Web3 */,
 				0812D5562A6C194D008881FE /* HDWalletKit */,
-				0812D5582A6C1972008881FE /* WalletConnectModal */,
-				0812D55A2A6C1972008881FE /* WalletConnectPairing */,
 				083B13A62A6C23F8004AE99D /* metamask-ios-sdk */,
+				089D7CEA2A6C44DC00B5BA59 /* WalletConnectAuth */,
+				089D7CEC2A6C44DC00B5BA59 /* WalletConnectModal */,
+				089D7CEE2A6C453600B5BA59 /* WalletConnectPairing */,
 			);
 			productName = LeSnacks;
 			productReference = 0889277E2A6B2427007DFE0E /* LeSnacks.app */;
@@ -410,11 +435,11 @@
 			mainGroup = 088927752A6B2427007DFE0E;
 			packageReferences = (
 				088927AB2A6B26A6007DFE0E /* XCRemoteSwiftPackageReference "SnowballSwiftKit" */,
-				088927FE2A6B52A9007DFE0E /* XCRemoteSwiftPackageReference "WalletConnectSwiftV2" */,
 				0889281E2A6B5530007DFE0E /* XCRemoteSwiftPackageReference "Starscream" */,
 				088928212A6B55FB007DFE0E /* XCRemoteSwiftPackageReference "Web3.swift" */,
 				088928282A6B5B15007DFE0E /* XCRemoteSwiftPackageReference "HDWallet" */,
 				083B13A52A6C23F8004AE99D /* XCRemoteSwiftPackageReference "metamask-ios-sdk" */,
+				089D7CE92A6C44DC00B5BA59 /* XCRemoteSwiftPackageReference "WalletConnectSwiftV2" */,
 			);
 			productRefGroup = 0889277F2A6B2427007DFE0E /* Products */;
 			projectDirPath = "";
@@ -486,11 +511,13 @@
 				088927C82A6B3BDA007DFE0E /* RepConnectView.swift in Sources */,
 				08BD2C4B2A6B62630024A874 /* WalletConnectDefaultCryptoProvider.swift in Sources */,
 				088927C62A6B33EF007DFE0E /* ChatView.swift in Sources */,
+				08B9FE062A6C908600A139CC /* User.swift in Sources */,
 				08BD2C4D2A6B628C0024A874 /* WalletConnectDefaultSocketFactory.swift in Sources */,
 				088927B52A6B3009007DFE0E /* MapView.swift in Sources */,
 				088927842A6B2427007DFE0E /* LoginView.swift in Sources */,
 				083B13B12A6C29E0004AE99D /* MetaMaskSwitchChainView.swift in Sources */,
 				083B13BB2A6C29F1004AE99D /* MetaMaskButtonStyle.swift in Sources */,
+				08B9FE042A6C7ECC00A139CC /* AuthViewModel.swift in Sources */,
 				083B13BA2A6C29F1004AE99D /* MetaMaskCurvature.swift in Sources */,
 				088927822A6B2427007DFE0E /* LeSnacksApp.swift in Sources */,
 				088928312A6B5C70007DFE0E /* WalletConnectAuthViewModel.swift in Sources */,
@@ -511,6 +538,7 @@
 			files = (
 				0889279F2A6B2428007DFE0E /* LeSnacksUITestsLaunchTests.swift in Sources */,
 				0889279D2A6B2428007DFE0E /* LeSnacksUITests.swift in Sources */,
+				083B13BF2A6C3C7B004AE99D /* SnapshotHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -563,6 +591,8 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Apple Development: Vivian Phung (FG655QY4XD)";
+				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -588,6 +618,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -624,6 +655,8 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Apple Development: Vivian Phung (FG655QY4XD)";
+				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -642,6 +675,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -653,6 +687,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = LeSnacks/LeSnacks.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"LeSnacks/Preview Content\"";
@@ -660,22 +695,26 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = LeSnacks/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "Le Snacks";
+				INFOPLIST_KEY_CFBundleDisplayName = Snacksss;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = xyz.parisbeepboop.LeSnacks;
+				PRODUCT_BUNDLE_IDENTIFIER = xyz.parisbeepboop.Snacksss;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -686,6 +725,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = LeSnacks/LeSnacks.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"LeSnacks/Preview Content\"";
@@ -693,22 +733,26 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = LeSnacks/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "Le Snacks";
+				INFOPLIST_KEY_CFBundleDisplayName = Snacksss;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = xyz.parisbeepboop.LeSnacks;
+				PRODUCT_BUNDLE_IDENTIFIER = xyz.parisbeepboop.Snacksss;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -718,17 +762,22 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 22;
 				DEVELOPMENT_TEAM = 9SAQ42S589;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = xyz.parisbeepboop.LeSnacksTests;
+				PRODUCT_BUNDLE_IDENTIFIER = xyz.parisbeepboop.SnacksssTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LeSnacks.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LeSnacks";
 			};
 			name = Debug;
@@ -739,17 +788,22 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 22;
 				DEVELOPMENT_TEAM = 9SAQ42S589;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = xyz.parisbeepboop.LeSnacksTests;
+				PRODUCT_BUNDLE_IDENTIFIER = xyz.parisbeepboop.SnacksssTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LeSnacks.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LeSnacks";
 			};
 			name = Release;
@@ -759,16 +813,21 @@
 			baseConfigurationReference = 088927B62A6B302D007DFE0E /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 22;
 				DEVELOPMENT_TEAM = 9SAQ42S589;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = xyz.parisbeepboop.LeSnacksUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = xyz.parisbeepboop.SnacksssUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				TEST_TARGET_NAME = LeSnacks;
 			};
 			name = Debug;
@@ -778,16 +837,21 @@
 			baseConfigurationReference = 088927B62A6B302D007DFE0E /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 22;
 				DEVELOPMENT_TEAM = 9SAQ42S589;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = xyz.parisbeepboop.LeSnacksUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = xyz.parisbeepboop.SnacksssUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				TEST_TARGET_NAME = LeSnacks;
 			};
 			name = Release;
@@ -850,14 +914,6 @@
 				minimumVersion = 0.0.6;
 			};
 		};
-		088927FE2A6B52A9007DFE0E /* XCRemoteSwiftPackageReference "WalletConnectSwiftV2" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/WalletConnect/WalletConnectSwiftV2.git";
-			requirement = {
-				kind = upToNextMinorVersion;
-				minimumVersion = 1.6.13;
-			};
-		};
 		0889281E2A6B5530007DFE0E /* XCRemoteSwiftPackageReference "Starscream" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/daltoniam/Starscream.git";
@@ -882,6 +938,14 @@
 				kind = branch;
 			};
 		};
+		089D7CE92A6C44DC00B5BA59 /* XCRemoteSwiftPackageReference "WalletConnectSwiftV2" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/VPhung24/WalletConnectSwiftV2";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 0.0.1;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -894,11 +958,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 088927AB2A6B26A6007DFE0E /* XCRemoteSwiftPackageReference "SnowballSwiftKit" */;
 			productName = SnowballSwiftKit;
-		};
-		0812D5502A6C194D008881FE /* WalletConnectAuth */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 088927FE2A6B52A9007DFE0E /* XCRemoteSwiftPackageReference "WalletConnectSwiftV2" */;
-			productName = WalletConnectAuth;
 		};
 		0812D5522A6C194D008881FE /* Starscream */ = {
 			isa = XCSwiftPackageProductDependency;
@@ -915,20 +974,25 @@
 			package = 088928282A6B5B15007DFE0E /* XCRemoteSwiftPackageReference "HDWallet" */;
 			productName = HDWalletKit;
 		};
-		0812D5582A6C1972008881FE /* WalletConnectModal */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 088927FE2A6B52A9007DFE0E /* XCRemoteSwiftPackageReference "WalletConnectSwiftV2" */;
-			productName = WalletConnectModal;
-		};
-		0812D55A2A6C1972008881FE /* WalletConnectPairing */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 088927FE2A6B52A9007DFE0E /* XCRemoteSwiftPackageReference "WalletConnectSwiftV2" */;
-			productName = WalletConnectPairing;
-		};
 		083B13A62A6C23F8004AE99D /* metamask-ios-sdk */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 083B13A52A6C23F8004AE99D /* XCRemoteSwiftPackageReference "metamask-ios-sdk" */;
 			productName = "metamask-ios-sdk";
+		};
+		089D7CEA2A6C44DC00B5BA59 /* WalletConnectAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 089D7CE92A6C44DC00B5BA59 /* XCRemoteSwiftPackageReference "WalletConnectSwiftV2" */;
+			productName = WalletConnectAuth;
+		};
+		089D7CEC2A6C44DC00B5BA59 /* WalletConnectModal */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 089D7CE92A6C44DC00B5BA59 /* XCRemoteSwiftPackageReference "WalletConnectSwiftV2" */;
+			productName = WalletConnectModal;
+		};
+		089D7CEE2A6C453600B5BA59 /* WalletConnectPairing */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 089D7CE92A6C44DC00B5BA59 /* XCRemoteSwiftPackageReference "WalletConnectSwiftV2" */;
+			productName = WalletConnectPairing;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
