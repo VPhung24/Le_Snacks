@@ -10,9 +10,9 @@ import SnowballSwiftKit
 import SnowballAssetKit
 
 struct LoginView: View {
-    @State var presentAuthView: Bool = false
+    @State var presentAuthView: LeSnacksAuth = .none
     @StateObject private var viewModel = WalletConnectAuthViewModel()
-    
+
     var body: some View {
         VStack {
             Spacer()
@@ -23,26 +23,30 @@ struct LoginView: View {
                         .kerning(0.36)
                         .foregroundColor(.primary)
                         .frame(maxWidth: .infinity, alignment: .topLeading)
-                    
+
                     Text("Don't have an account? We'll make one for you")
                         .font(.subheadline)
                         .foregroundColor(Color(UIColor.secondaryLabel))
                         .frame(maxWidth: .infinity, alignment: .topLeading)
                 }
                 .frame(maxWidth: .infinity, alignment: .topLeading)
-                
-                VStack {
-                    LoginProviderCell(presentAuthView: $presentAuthView, provider: LoginProvider(.metamask))
-                    LoginProviderCell(presentAuthView: $presentAuthView, provider: LoginProvider(.walletConnect))
-                    // to do: gnosis
-                    LoginProviderCell(presentAuthView: $presentAuthView, provider: LoginProvider(.walletConnect))
-                    LoginProviderCell(presentAuthView: $presentAuthView, provider: LoginProvider(.snowball))
+
+                ForEach(LeSnacksAuth.allCases.dropLast(), id: \.self) { auth in
+                    LoginProviderCell(presentAuthType: $presentAuthView, provider: auth)
                 }
             }
         }
         .padding()
-        .sheet(isPresented: $presentAuthView) {
-            WalletConnectAuthView(viewModel: viewModel)
+        .sheet(isPresented: .constant(presentAuthView != .none)) {
+            switch presentAuthView {
+            case .metamask:
+                MetaMaskAuthView()
+            case .walletconnect:
+                WalletConnectAuthView(viewModel: viewModel)
+            default:
+                Text("Snowball Auth")
+            }
+
         }
     }
 }

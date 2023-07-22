@@ -9,15 +9,15 @@ import SwiftUI
 import SnowballAssetKit
 
 struct LoginProviderCell: View {
-    @Binding var presentAuthView: Bool
-    let provider: LoginProvider
+    @Binding var presentAuthType: LeSnacksAuth
+    let provider: LeSnacksAuth
 
     var body: some View {
         HStack(alignment: .center, spacing: 12) {
             // to do: fix coloring
-            SnowballImage(provider.icon)
+            provider.icon
 
-            Text(provider.title.capitalized(with: .current))
+            Text(provider.title)
                 .foregroundColor(.primary)
                 .font(.subheadline)
                 .frame(maxWidth: .infinity, alignment: .leading)
@@ -32,14 +32,14 @@ struct LoginProviderCell: View {
         .background(Color(UIColor.tertiarySystemFill))
         .cornerRadius(12)
         .onTapGesture {
-            presentAuthView = true
+            presentAuthType = provider
         }
     }
 }
 
 struct LoginProviderCell_Previews: PreviewProvider {
     static var previews: some View {
-        LoginProviderCell(presentAuthView: .constant(false), provider: LoginProvider(.metamask))
+        LoginProviderCell(presentAuthType: .constant(.metamask), provider: .metamask)
             .padding()
             .previewLayout(.sizeThatFits)
     }

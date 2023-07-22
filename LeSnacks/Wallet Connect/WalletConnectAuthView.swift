@@ -26,13 +26,13 @@ struct WalletConnectAuthView: View {
             Spacer()
 
             Button("Connect Wallet", action: { })
-                .buttonStyle(CircleButtonStyle())
+                .buttonStyle(DefaultButtonStyle())
 
             Button("Copy URI", action: { viewModel.copyDidPressed() })
-                .buttonStyle(CircleButtonStyle())
+                .buttonStyle(DefaultButtonStyle())
 
             Button("Deeplink", action: { viewModel.deeplinkPressed() })
-                .buttonStyle(CircleButtonStyle())
+                .buttonStyle(DefaultButtonStyle())
 
         }
         .padding(16.0)
@@ -91,17 +91,5 @@ struct SigningLabel: View {
         .fixedSize(horizontal: true, vertical: false)
         .background(state.color)
         .cornerRadius(4.0)
-    }
-}
-
-struct CircleButtonStyle: ButtonStyle {
-
-    func makeBody(configuration: Self.Configuration) -> some View {
-        configuration.label
-            .frame(width: 200, height: 44)
-            .foregroundColor(.white)
-            .background(configuration.isPressed ? Color.blue.opacity(0.5) : Color.blue)
-            .font(.system(size: 17, weight: .semibold))
-            .cornerRadius(8.0)
     }
 }

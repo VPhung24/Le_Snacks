@@ -13,25 +13,25 @@ import WalletConnectRelay
 class WalletConnectWebSocket: WebSocketConnecting {
     var request: URLRequest = .init(url: URL(string: "wss://relay.walletconnect.com")!)
     var isConnected: Bool = false
-    
+
     init(request: URLRequest) {
         self.request = request
     }
-    
+
     var onConnect: (() -> Void)?
     var onDisconnect: ((Error?) -> Void)?
     var onText: ((String) -> Void)?
-    
+
     func connect() {
         print("websocket connected")
         isConnected = true
     }
-    
+
     func disconnect() {
         print("websocket disconnected")
         isConnected = false
     }
-    
+
     func write(string: String, completion: (() -> Void)?) {
         print("websocket write \(string)")
         completion?()

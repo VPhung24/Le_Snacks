@@ -43,7 +43,7 @@ final class WalletConnectAuthViewModel: ObservableObject {
             projectId: Configuration.string(for: "WALLET_CONNECT_PROJECT_ID"),
             metadata: metadata
         )
-                
+
         setupSubscriptions()
     }
 
