@@ -6,21 +6,37 @@
 //
 
 import SwiftUI
+import SnowballSwiftKit
 
 struct ProfileView: View {
     let address: String
-    @StateObject var reviewsViewModel = LeSnacksModelsViewModel<Review>()
+    @StateObject var reviewsViewModel = LeSnacksModelViewModel<User>()
 
     var body: some View {
         VStack {
-            if let user = reviewsViewModel.user {
+            if let user = reviewsViewModel.model {
                 AsyncImage(url: URL(string: user.profilePictureUrl!))
                     .scaledToFit()
-                ForEach(user.visitedRestaurants, id: \.self) { restaurant in
-                    CheckInCell(restaurantId: restaurant)
+                ScrollView {
+                    ForEach(user.visitedRestaurants, id: \.self) { restaurant in
+                        CheckInCell(restaurantId: restaurant)
+                    }
                 }
+                Button {
+                    UIApplication.shared.open(URL(string: "http://testnets.opensea.io/assets/goerli/0x29381c61f54c59d690cb88ca588748ef2fffd075/\(user.tummyTokenId)")!)
+                } label: {
+                    HStack(spacing: 4) {
+                        Text("Open on OpenSea")
+                            .font(.subheadline.bold())
+                        Image(systemName: "arrow.up.right")
+                            .font(.subheadline.bold())
+                    }
+                    .lineSpacing(20)
+                    .frame(maxWidth: .infinity)
+                }
+                .buttonStyle(SnowballButtonStyle.snowballTinted(.large))
+                .padding()
             }
-
             Spacer()
         }
         .edgesIgnoringSafeArea([.top, .leading, .trailing])
@@ -28,8 +44,7 @@ struct ProfileView: View {
             Label("Profile", systemImage: "person.crop.circle.fill")
         }
         .onAppear {
-            reviewsViewModel.fetch(endpoint: .getReviewFromAddress(address))
-            reviewsViewModel.fetchUserModel(endpoint: .getUser(address))
+            reviewsViewModel.fetch(endpoint: .getUser(address))
         }
     }
 
