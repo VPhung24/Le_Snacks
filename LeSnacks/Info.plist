@@ -14,7 +14,6 @@
 				<string>lesnacks</string>
 			</array>
 		</dict>
-		<dict/>
 	</array>
 	<key>SIMULATOR_IDENTIFIER</key>
 	<string>$(SIMULATOR_IDENTIFIER)</string>

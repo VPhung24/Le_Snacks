@@ -8,11 +8,10 @@
 import SwiftUI
 import SnowballAssetKit
 
-enum LeSnacksAuth: CaseIterable {
+enum AuthProvider: String, CaseIterable, LoginProviderProtocol {
     case metamask
     case walletconnect
     case snowball
-    case none
 
     var icon: Image {
         switch self {
@@ -22,8 +21,6 @@ enum LeSnacksAuth: CaseIterable {
             return SnowballImage(.walletConnect)
         case .snowball:
             return SnowballImage(.snowball)
-        default:
-            return SnowballImage(.eth)
         }
     }
 
@@ -35,8 +32,6 @@ enum LeSnacksAuth: CaseIterable {
             return "Wallet Connect"
         case .snowball:
             return "Snowball"
-        default:
-            return ""
         }
     }
 }

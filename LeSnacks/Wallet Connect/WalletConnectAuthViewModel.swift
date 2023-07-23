@@ -24,10 +24,6 @@ final class WalletConnectAuthViewModel: ObservableObject {
     @Published var state: SigningState = .none
     @Published var uriString: String?
 
-    var qrImage: UIImage? {
-        return uriString.map { QRCodeGenerator.generateQRCode(from: $0) }
-    }
-
     init() {
         Networking.configure(projectId: Configuration.string(for: "WALLET_CONNECT_PROJECT_ID"), socketFactory: WalletConnectDefaultSocketFactory())
         Auth.configure(crypto: WalletConnectDefaultCryptoProvider())

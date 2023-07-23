@@ -6,15 +6,22 @@
 //
 
 import SwiftUI
+import Combine
+import metamask_ios_sdk
 
 @main
 struct LeSnacksApp: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) private var appDelegate
+    @StateObject private var userViewModel = LeSnacksModelViewModel<User>()
 
     var body: some Scene {
         WindowGroup {
             NavigationView {
-                LoginView()
+                if userViewModel.model != nil {
+                    HomeView(address: userViewModel.model?.walletAddress ?? "")
+                } else {
+                    LoginView(userViewModel: userViewModel)
+                }
             }
         }
     }

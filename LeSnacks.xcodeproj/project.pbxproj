@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0812D5452A6C17CA008881FE /* MetaMaskAuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0812D5442A6C17CA008881FE /* MetaMaskAuthView.swift */; };
 		0812D5492A6C182D008881FE /* LICENSE.md in Resources */ = {isa = PBXBuildFile; fileRef = 0812D5462A6C182D008881FE /* LICENSE.md */; };
 		0812D54A2A6C182D008881FE /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 0812D5472A6C182D008881FE /* .gitignore */; };
 		0812D54B2A6C182D008881FE /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 0812D5482A6C182D008881FE /* README.md */; };
@@ -20,17 +19,7 @@
 		0812D5592A6C1972008881FE /* WalletConnectModal in Frameworks */ = {isa = PBXBuildFile; productRef = 0812D5582A6C1972008881FE /* WalletConnectModal */; };
 		0812D55B2A6C1972008881FE /* WalletConnectPairing in Frameworks */ = {isa = PBXBuildFile; productRef = 0812D55A2A6C1972008881FE /* WalletConnectPairing */; };
 		083B13A72A6C23F8004AE99D /* metamask-ios-sdk in Frameworks */ = {isa = PBXBuildFile; productRef = 083B13A62A6C23F8004AE99D /* metamask-ios-sdk */; };
-		083B13B02A6C29E0004AE99D /* MetaMaskNetworkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 083B13A82A6C29DF004AE99D /* MetaMaskNetworkView.swift */; };
-		083B13B12A6C29E0004AE99D /* MetaMaskSwitchChainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 083B13A92A6C29E0004AE99D /* MetaMaskSwitchChainView.swift */; };
-		083B13B22A6C29E0004AE99D /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 083B13AA2A6C29E0004AE99D /* ViewExtension.swift */; };
-		083B13B32A6C29E0004AE99D /* MetaMaskTextStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 083B13AB2A6C29E0004AE99D /* MetaMaskTextStyle.swift */; };
-		083B13B42A6C29E0004AE99D /* MetaMaskToastOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 083B13AC2A6C29E0004AE99D /* MetaMaskToastOverlay.swift */; };
-		083B13B52A6C29E0004AE99D /* MetaMaskToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 083B13AD2A6C29E0004AE99D /* MetaMaskToastView.swift */; };
-		083B13B62A6C29E0004AE99D /* MetaMaskSignView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 083B13AE2A6C29E0004AE99D /* MetaMaskSignView.swift */; };
-		083B13B72A6C29E0004AE99D /* MetaMaskTransactionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 083B13AF2A6C29E0004AE99D /* MetaMaskTransactionView.swift */; };
-		083B13BA2A6C29F1004AE99D /* MetaMaskCurvature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 083B13B82A6C29F1004AE99D /* MetaMaskCurvature.swift */; };
-		083B13BB2A6C29F1004AE99D /* MetaMaskButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 083B13B92A6C29F1004AE99D /* MetaMaskButtonStyle.swift */; };
-		083B13BD2A6C32E3004AE99D /* LeSnacksAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 083B13BC2A6C32E3004AE99D /* LeSnacksAuth.swift */; };
+		083B13BD2A6C32E3004AE99D /* AuthProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 083B13BC2A6C32E3004AE99D /* AuthProvider.swift */; };
 		088927822A6B2427007DFE0E /* LeSnacksApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088927812A6B2427007DFE0E /* LeSnacksApp.swift */; };
 		088927842A6B2427007DFE0E /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088927832A6B2427007DFE0E /* LoginView.swift */; };
 		088927862A6B2428007DFE0E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 088927852A6B2428007DFE0E /* Assets.xcassets */; };
@@ -41,17 +30,19 @@
 		088927B12A6B2AA0007DFE0E /* LoginProviderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088927B02A6B2AA0007DFE0E /* LoginProviderCell.swift */; };
 		088927B32A6B2E8A007DFE0E /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088927B22A6B2E8A007DFE0E /* ProfileView.swift */; };
 		088927B52A6B3009007DFE0E /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088927B42A6B3009007DFE0E /* MapView.swift */; };
-		088927BF2A6B31AF007DFE0E /* LoginProviders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088927BE2A6B31AF007DFE0E /* LoginProviders.swift */; };
-		088927C42A6B33E6007DFE0E /* ChatListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088927C32A6B33E6007DFE0E /* ChatListView.swift */; };
-		088927C62A6B33EF007DFE0E /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088927C52A6B33EF007DFE0E /* ChatView.swift */; };
-		088927C82A6B3BDA007DFE0E /* RepConnectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088927C72A6B3BDA007DFE0E /* RepConnectView.swift */; };
 		088927CB2A6B3D35007DFE0E /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088927CA2A6B3D35007DFE0E /* Restaurant.swift */; };
 		088927CD2A6B3D78007DFE0E /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088927CC2A6B3D78007DFE0E /* APIManager.swift */; };
-		088927D02A6B3DD6007DFE0E /* RestaurantViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088927CF2A6B3DD6007DFE0E /* RestaurantViewModel.swift */; };
+		088927D02A6B3DD6007DFE0E /* LeSnacksModelsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088927CF2A6B3DD6007DFE0E /* LeSnacksModelsViewModel.swift */; };
 		0889281C2A6B5359007DFE0E /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0889281B2A6B5359007DFE0E /* Configuration.swift */; };
-		0889282F2A6B5C5E007DFE0E /* WalletConnectAuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0889282E2A6B5C5E007DFE0E /* WalletConnectAuthView.swift */; };
 		088928312A6B5C70007DFE0E /* WalletConnectAuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088928302A6B5C70007DFE0E /* WalletConnectAuthViewModel.swift */; };
-		088928332A6B5D55007DFE0E /* WalletConnectQRCodeGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088928322A6B5D55007DFE0E /* WalletConnectQRCodeGenerator.swift */; };
+		08B9FE112A6CBEAE00A139CC /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08B9FE102A6CBEAE00A139CC /* User.swift */; };
+		08B9FE132A6CC62A00A139CC /* Review.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08B9FE122A6CC62A00A139CC /* Review.swift */; };
+		08B9FE162A6CCA4C00A139CC /* WalletConnectProviders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08B9FE152A6CCA4C00A139CC /* WalletConnectProviders.swift */; };
+		08B9FE182A6CCE4F00A139CC /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08B9FE172A6CCE4F00A139CC /* HomeView.swift */; };
+		08B9FE1C2A6CD07200A139CC /* LeSnacksModelViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08B9FE1B2A6CD07200A139CC /* LeSnacksModelViewModel.swift */; };
+		08B9FE1E2A6CD09900A139CC /* LeSnacksEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08B9FE1D2A6CD09900A139CC /* LeSnacksEndpoints.swift */; };
+		08B9FE222A6CD7D700A139CC /* RestaurantView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08B9FE212A6CD7D700A139CC /* RestaurantView.swift */; };
+		08B9FE252A6CE58800A139CC /* CheckInCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08B9FE242A6CE58800A139CC /* CheckInCell.swift */; };
 		08BD2C492A6B61440024A874 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 08BD2C482A6B61440024A874 /* .swiftlint.yml */; };
 		08BD2C4B2A6B62630024A874 /* WalletConnectDefaultCryptoProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08BD2C4A2A6B62630024A874 /* WalletConnectDefaultCryptoProvider.swift */; };
 		08BD2C4D2A6B628C0024A874 /* WalletConnectDefaultSocketFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08BD2C4C2A6B628C0024A874 /* WalletConnectDefaultSocketFactory.swift */; };
@@ -77,21 +68,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0812D5442A6C17CA008881FE /* MetaMaskAuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetaMaskAuthView.swift; sourceTree = "<group>"; };
 		0812D5462A6C182D008881FE /* LICENSE.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = SOURCE_ROOT; };
 		0812D5472A6C182D008881FE /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = SOURCE_ROOT; };
 		0812D5482A6C182D008881FE /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
-		083B13A82A6C29DF004AE99D /* MetaMaskNetworkView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetaMaskNetworkView.swift; sourceTree = "<group>"; };
-		083B13A92A6C29E0004AE99D /* MetaMaskSwitchChainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetaMaskSwitchChainView.swift; sourceTree = "<group>"; };
-		083B13AA2A6C29E0004AE99D /* ViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
-		083B13AB2A6C29E0004AE99D /* MetaMaskTextStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetaMaskTextStyle.swift; sourceTree = "<group>"; };
-		083B13AC2A6C29E0004AE99D /* MetaMaskToastOverlay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetaMaskToastOverlay.swift; sourceTree = "<group>"; };
-		083B13AD2A6C29E0004AE99D /* MetaMaskToastView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetaMaskToastView.swift; sourceTree = "<group>"; };
-		083B13AE2A6C29E0004AE99D /* MetaMaskSignView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetaMaskSignView.swift; sourceTree = "<group>"; };
-		083B13AF2A6C29E0004AE99D /* MetaMaskTransactionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetaMaskTransactionView.swift; sourceTree = "<group>"; };
-		083B13B82A6C29F1004AE99D /* MetaMaskCurvature.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetaMaskCurvature.swift; sourceTree = "<group>"; };
-		083B13B92A6C29F1004AE99D /* MetaMaskButtonStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetaMaskButtonStyle.swift; sourceTree = "<group>"; };
-		083B13BC2A6C32E3004AE99D /* LeSnacksAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeSnacksAuth.swift; sourceTree = "<group>"; };
+		083B13BC2A6C32E3004AE99D /* AuthProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthProvider.swift; sourceTree = "<group>"; };
 		0889277E2A6B2427007DFE0E /* LeSnacks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LeSnacks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		088927812A6B2427007DFE0E /* LeSnacksApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeSnacksApp.swift; sourceTree = "<group>"; };
 		088927832A6B2427007DFE0E /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
@@ -106,18 +86,20 @@
 		088927B22A6B2E8A007DFE0E /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		088927B42A6B3009007DFE0E /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		088927B62A6B302D007DFE0E /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
-		088927BE2A6B31AF007DFE0E /* LoginProviders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginProviders.swift; sourceTree = "<group>"; };
-		088927C32A6B33E6007DFE0E /* ChatListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListView.swift; sourceTree = "<group>"; };
-		088927C52A6B33EF007DFE0E /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
-		088927C72A6B3BDA007DFE0E /* RepConnectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepConnectView.swift; sourceTree = "<group>"; };
 		088927CA2A6B3D35007DFE0E /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
 		088927CC2A6B3D78007DFE0E /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
-		088927CF2A6B3DD6007DFE0E /* RestaurantViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantViewModel.swift; sourceTree = "<group>"; };
+		088927CF2A6B3DD6007DFE0E /* LeSnacksModelsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeSnacksModelsViewModel.swift; sourceTree = "<group>"; };
 		0889281B2A6B5359007DFE0E /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 		0889281D2A6B53B2007DFE0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		0889282E2A6B5C5E007DFE0E /* WalletConnectAuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletConnectAuthView.swift; sourceTree = "<group>"; };
 		088928302A6B5C70007DFE0E /* WalletConnectAuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletConnectAuthViewModel.swift; sourceTree = "<group>"; };
-		088928322A6B5D55007DFE0E /* WalletConnectQRCodeGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletConnectQRCodeGenerator.swift; sourceTree = "<group>"; };
+		08B9FE102A6CBEAE00A139CC /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		08B9FE122A6CC62A00A139CC /* Review.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Review.swift; sourceTree = "<group>"; };
+		08B9FE152A6CCA4C00A139CC /* WalletConnectProviders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletConnectProviders.swift; sourceTree = "<group>"; };
+		08B9FE172A6CCE4F00A139CC /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		08B9FE1B2A6CD07200A139CC /* LeSnacksModelViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeSnacksModelViewModel.swift; sourceTree = "<group>"; };
+		08B9FE1D2A6CD09900A139CC /* LeSnacksEndpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeSnacksEndpoints.swift; sourceTree = "<group>"; };
+		08B9FE212A6CD7D700A139CC /* RestaurantView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantView.swift; sourceTree = "<group>"; };
+		08B9FE242A6CE58800A139CC /* CheckInCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckInCell.swift; sourceTree = "<group>"; };
 		08BD2C482A6B61440024A874 /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = SOURCE_ROOT; };
 		08BD2C4A2A6B62630024A874 /* WalletConnectDefaultCryptoProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletConnectDefaultCryptoProvider.swift; sourceTree = "<group>"; };
 		08BD2C4C2A6B628C0024A874 /* WalletConnectDefaultSocketFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletConnectDefaultSocketFactory.swift; sourceTree = "<group>"; };
@@ -160,23 +142,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0812D5432A6C17B2008881FE /* MetaMask */ = {
-			isa = PBXGroup;
-			children = (
-				0812D5442A6C17CA008881FE /* MetaMaskAuthView.swift */,
-				083B13A82A6C29DF004AE99D /* MetaMaskNetworkView.swift */,
-				083B13B92A6C29F1004AE99D /* MetaMaskButtonStyle.swift */,
-				083B13B82A6C29F1004AE99D /* MetaMaskCurvature.swift */,
-				083B13AE2A6C29E0004AE99D /* MetaMaskSignView.swift */,
-				083B13A92A6C29E0004AE99D /* MetaMaskSwitchChainView.swift */,
-				083B13AB2A6C29E0004AE99D /* MetaMaskTextStyle.swift */,
-				083B13AC2A6C29E0004AE99D /* MetaMaskToastOverlay.swift */,
-				083B13AD2A6C29E0004AE99D /* MetaMaskToastView.swift */,
-				083B13AF2A6C29E0004AE99D /* MetaMaskTransactionView.swift */,
-			);
-			path = MetaMask;
-			sourceTree = "<group>";
-		};
 		088927752A6B2427007DFE0E = {
 			isa = PBXGroup;
 			children = (
@@ -205,10 +170,10 @@
 				088927812A6B2427007DFE0E /* LeSnacksApp.swift */,
 				08BD2C542A6B79340024A874 /* AppDelegate.swift */,
 				08BD2C562A6B79C40024A874 /* SceneDelegate.swift */,
+				08B9FE142A6CCA2900A139CC /* Types */,
 				088927CE2A6B3DB3007DFE0E /* View Models */,
 				088927C92A6B3D18007DFE0E /* Models */,
 				088927C02A6B320F007DFE0E /* View */,
-				0812D5432A6C17B2008881FE /* MetaMask */,
 				0889282B2A6B5C33007DFE0E /* Wallet Connect */,
 				088927BD2A6B3188007DFE0E /* Helpers */,
 				088927852A6B2428007DFE0E /* Assets.xcassets */,
@@ -251,11 +216,9 @@
 		088927BD2A6B3188007DFE0E /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				088927BE2A6B31AF007DFE0E /* LoginProviders.swift */,
 				0889281B2A6B5359007DFE0E /* Configuration.swift */,
+				08B9FE1D2A6CD09900A139CC /* LeSnacksEndpoints.swift */,
 				088927CC2A6B3D78007DFE0E /* APIManager.swift */,
-				083B13AA2A6C29E0004AE99D /* ViewExtension.swift */,
-				083B13BC2A6C32E3004AE99D /* LeSnacksAuth.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -263,13 +226,11 @@
 		088927C02A6B320F007DFE0E /* View */ = {
 			isa = PBXGroup;
 			children = (
-				088927832A6B2427007DFE0E /* LoginView.swift */,
-				088927B02A6B2AA0007DFE0E /* LoginProviderCell.swift */,
-				088927C72A6B3BDA007DFE0E /* RepConnectView.swift */,
-				088927B42A6B3009007DFE0E /* MapView.swift */,
+				08B9FE232A6CE56100A139CC /* Map */,
+				08B9FE192A6CCE6700A139CC /* Login */,
+				08B9FE172A6CCE4F00A139CC /* HomeView.swift */,
+				08B9FE242A6CE58800A139CC /* CheckInCell.swift */,
 				088927B22A6B2E8A007DFE0E /* ProfileView.swift */,
-				088927C32A6B33E6007DFE0E /* ChatListView.swift */,
-				088927C52A6B33EF007DFE0E /* ChatView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -278,6 +239,8 @@
 			isa = PBXGroup;
 			children = (
 				088927CA2A6B3D35007DFE0E /* Restaurant.swift */,
+				08B9FE102A6CBEAE00A139CC /* User.swift */,
+				08B9FE122A6CC62A00A139CC /* Review.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -285,7 +248,8 @@
 		088927CE2A6B3DB3007DFE0E /* View Models */ = {
 			isa = PBXGroup;
 			children = (
-				088927CF2A6B3DD6007DFE0E /* RestaurantViewModel.swift */,
+				088927CF2A6B3DD6007DFE0E /* LeSnacksModelsViewModel.swift */,
+				08B9FE1B2A6CD07200A139CC /* LeSnacksModelViewModel.swift */,
 			);
 			path = "View Models";
 			sourceTree = "<group>";
@@ -303,10 +267,35 @@
 				08BD2C4C2A6B628C0024A874 /* WalletConnectDefaultSocketFactory.swift */,
 				08BD2C4A2A6B62630024A874 /* WalletConnectDefaultCryptoProvider.swift */,
 				088928302A6B5C70007DFE0E /* WalletConnectAuthViewModel.swift */,
-				0889282E2A6B5C5E007DFE0E /* WalletConnectAuthView.swift */,
-				088928322A6B5D55007DFE0E /* WalletConnectQRCodeGenerator.swift */,
 			);
 			path = "Wallet Connect";
+			sourceTree = "<group>";
+		};
+		08B9FE142A6CCA2900A139CC /* Types */ = {
+			isa = PBXGroup;
+			children = (
+				083B13BC2A6C32E3004AE99D /* AuthProvider.swift */,
+				08B9FE152A6CCA4C00A139CC /* WalletConnectProviders.swift */,
+			);
+			path = Types;
+			sourceTree = "<group>";
+		};
+		08B9FE192A6CCE6700A139CC /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				088927832A6B2427007DFE0E /* LoginView.swift */,
+				088927B02A6B2AA0007DFE0E /* LoginProviderCell.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		08B9FE232A6CE56100A139CC /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				088927B42A6B3009007DFE0E /* MapView.swift */,
+				08B9FE212A6CD7D700A139CC /* RestaurantView.swift */,
+			);
+			path = Map;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -463,37 +452,28 @@
 			buildActionMask = 2147483647;
 			files = (
 				088927CB2A6B3D35007DFE0E /* Restaurant.swift in Sources */,
-				0812D5452A6C17CA008881FE /* MetaMaskAuthView.swift in Sources */,
-				088927D02A6B3DD6007DFE0E /* RestaurantViewModel.swift in Sources */,
-				088927BF2A6B31AF007DFE0E /* LoginProviders.swift in Sources */,
-				083B13B72A6C29E0004AE99D /* MetaMaskTransactionView.swift in Sources */,
-				083B13B42A6C29E0004AE99D /* MetaMaskToastOverlay.swift in Sources */,
+				08B9FE1C2A6CD07200A139CC /* LeSnacksModelViewModel.swift in Sources */,
+				088927D02A6B3DD6007DFE0E /* LeSnacksModelsViewModel.swift in Sources */,
 				0889281C2A6B5359007DFE0E /* Configuration.swift in Sources */,
-				083B13B02A6C29E0004AE99D /* MetaMaskNetworkView.swift in Sources */,
-				083B13B22A6C29E0004AE99D /* ViewExtension.swift in Sources */,
 				088927B32A6B2E8A007DFE0E /* ProfileView.swift in Sources */,
-				083B13B62A6C29E0004AE99D /* MetaMaskSignView.swift in Sources */,
-				0889282F2A6B5C5E007DFE0E /* WalletConnectAuthView.swift in Sources */,
 				088927B12A6B2AA0007DFE0E /* LoginProviderCell.swift in Sources */,
-				083B13B32A6C29E0004AE99D /* MetaMaskTextStyle.swift in Sources */,
-				083B13BD2A6C32E3004AE99D /* LeSnacksAuth.swift in Sources */,
+				08B9FE182A6CCE4F00A139CC /* HomeView.swift in Sources */,
+				08B9FE132A6CC62A00A139CC /* Review.swift in Sources */,
+				083B13BD2A6C32E3004AE99D /* AuthProvider.swift in Sources */,
+				08B9FE252A6CE58800A139CC /* CheckInCell.swift in Sources */,
 				08BD2C572A6B79C40024A874 /* SceneDelegate.swift in Sources */,
 				08BD2C552A6B79340024A874 /* AppDelegate.swift in Sources */,
+				08B9FE222A6CD7D700A139CC /* RestaurantView.swift in Sources */,
 				088927CD2A6B3D78007DFE0E /* APIManager.swift in Sources */,
-				088927C42A6B33E6007DFE0E /* ChatListView.swift in Sources */,
-				083B13B52A6C29E0004AE99D /* MetaMaskToastView.swift in Sources */,
-				088928332A6B5D55007DFE0E /* WalletConnectQRCodeGenerator.swift in Sources */,
-				088927C82A6B3BDA007DFE0E /* RepConnectView.swift in Sources */,
 				08BD2C4B2A6B62630024A874 /* WalletConnectDefaultCryptoProvider.swift in Sources */,
-				088927C62A6B33EF007DFE0E /* ChatView.swift in Sources */,
+				08B9FE162A6CCA4C00A139CC /* WalletConnectProviders.swift in Sources */,
 				08BD2C4D2A6B628C0024A874 /* WalletConnectDefaultSocketFactory.swift in Sources */,
+				08B9FE1E2A6CD09900A139CC /* LeSnacksEndpoints.swift in Sources */,
 				088927B52A6B3009007DFE0E /* MapView.swift in Sources */,
 				088927842A6B2427007DFE0E /* LoginView.swift in Sources */,
-				083B13B12A6C29E0004AE99D /* MetaMaskSwitchChainView.swift in Sources */,
-				083B13BB2A6C29F1004AE99D /* MetaMaskButtonStyle.swift in Sources */,
-				083B13BA2A6C29F1004AE99D /* MetaMaskCurvature.swift in Sources */,
 				088927822A6B2427007DFE0E /* LeSnacksApp.swift in Sources */,
 				088928312A6B5C70007DFE0E /* WalletConnectAuthViewModel.swift in Sources */,
+				08B9FE112A6CBEAE00A139CC /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -666,6 +646,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -699,6 +680,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

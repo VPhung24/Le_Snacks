@@ -9,14 +9,13 @@ import Foundation
 import CoreLocation
 
 struct Restaurant: Codable, Identifiable {
+    var id: String
     let name: String
     let url: String
     let rating: Float
     let cuisine: String
     let address: String
     let geolocation: Geolocation
-
-    var id: String { url }
 }
 
 struct Geolocation: Codable {
