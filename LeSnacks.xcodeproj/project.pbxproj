@@ -43,6 +43,7 @@
 		08B9FE1E2A6CD09900A139CC /* LeSnacksEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08B9FE1D2A6CD09900A139CC /* LeSnacksEndpoints.swift */; };
 		08B9FE222A6CD7D700A139CC /* RestaurantView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08B9FE212A6CD7D700A139CC /* RestaurantView.swift */; };
 		08B9FE252A6CE58800A139CC /* CheckInCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08B9FE242A6CE58800A139CC /* CheckInCell.swift */; };
+		08B9FE272A6CEF1A00A139CC /* QRCodeGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08B9FE262A6CEF1A00A139CC /* QRCodeGenerator.swift */; };
 		08BD2C492A6B61440024A874 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 08BD2C482A6B61440024A874 /* .swiftlint.yml */; };
 		08BD2C4B2A6B62630024A874 /* WalletConnectDefaultCryptoProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08BD2C4A2A6B62630024A874 /* WalletConnectDefaultCryptoProvider.swift */; };
 		08BD2C4D2A6B628C0024A874 /* WalletConnectDefaultSocketFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08BD2C4C2A6B628C0024A874 /* WalletConnectDefaultSocketFactory.swift */; };
@@ -100,6 +101,7 @@
 		08B9FE1D2A6CD09900A139CC /* LeSnacksEndpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeSnacksEndpoints.swift; sourceTree = "<group>"; };
 		08B9FE212A6CD7D700A139CC /* RestaurantView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantView.swift; sourceTree = "<group>"; };
 		08B9FE242A6CE58800A139CC /* CheckInCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckInCell.swift; sourceTree = "<group>"; };
+		08B9FE262A6CEF1A00A139CC /* QRCodeGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeGenerator.swift; sourceTree = "<group>"; };
 		08BD2C482A6B61440024A874 /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = SOURCE_ROOT; };
 		08BD2C4A2A6B62630024A874 /* WalletConnectDefaultCryptoProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletConnectDefaultCryptoProvider.swift; sourceTree = "<group>"; };
 		08BD2C4C2A6B628C0024A874 /* WalletConnectDefaultSocketFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletConnectDefaultSocketFactory.swift; sourceTree = "<group>"; };
@@ -267,6 +269,7 @@
 				08BD2C4C2A6B628C0024A874 /* WalletConnectDefaultSocketFactory.swift */,
 				08BD2C4A2A6B62630024A874 /* WalletConnectDefaultCryptoProvider.swift */,
 				088928302A6B5C70007DFE0E /* WalletConnectAuthViewModel.swift */,
+				08B9FE262A6CEF1A00A139CC /* QRCodeGenerator.swift */,
 			);
 			path = "Wallet Connect";
 			sourceTree = "<group>";
@@ -464,6 +467,7 @@
 				08BD2C572A6B79C40024A874 /* SceneDelegate.swift in Sources */,
 				08BD2C552A6B79340024A874 /* AppDelegate.swift in Sources */,
 				08B9FE222A6CD7D700A139CC /* RestaurantView.swift in Sources */,
+				08B9FE272A6CEF1A00A139CC /* QRCodeGenerator.swift in Sources */,
 				088927CD2A6B3D78007DFE0E /* APIManager.swift in Sources */,
 				08BD2C4B2A6B62630024A874 /* WalletConnectDefaultCryptoProvider.swift in Sources */,
 				08B9FE162A6CCA4C00A139CC /* WalletConnectProviders.swift in Sources */,

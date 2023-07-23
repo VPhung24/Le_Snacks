@@ -14,16 +14,17 @@ import metamask_ios_sdk
 struct LoginView: View {
     @State var presentWalletConnectView: Bool = false
     @StateObject private var viewModel = WalletConnectAuthViewModel()
-
+    @State var qrImage: UIImage?
+    
     @StateObject var userViewModel: LeSnacksModelViewModel<User>
-
+    
     @ObservedObject var ethereum = MetaMaskSDK.shared.ethereum
     @State private var cancellables: Set<AnyCancellable> = []
-
+    
     private let dapp = Dapp(name: "Le Snacks", url: "https://lesnacks.xyz")
-
+    
     @State private var errorMessage = ""
-
+    
     var body: some View {
         VStack {
             Spacer()
@@ -34,14 +35,14 @@ struct LoginView: View {
                         .kerning(0.36)
                         .foregroundColor(.primary)
                         .frame(maxWidth: .infinity, alignment: .topLeading)
-
+                    
                     Text("Don't have an account? We'll make one for you")
                         .font(.subheadline)
                         .foregroundColor(Color(UIColor.secondaryLabel))
                         .frame(maxWidth: .infinity, alignment: .topLeading)
                 }
                 .frame(maxWidth: .infinity, alignment: .topLeading)
-
+                
                 ForEach(AuthProvider.allCases, id: \.self) { auth in
                     LoginProviderCell(provider: auth)
                         .onTapGesture {
@@ -52,17 +53,17 @@ struct LoginView: View {
         }
         .padding()
         .sheet(isPresented: $presentWalletConnectView) {
-            ForEach(WalletConnectProviders.allCases, id: \.self) { auth in
-                LoginProviderCell(provider: auth)
-                    .onTapGesture {
-                        onTap(auth: .walletconnect, wallet: auth)
-                    }
+            Group {
+                if let qrImage = qrImage {
+                    Image(uiImage: qrImage)
+                }
             }
-            .padding()
+            .presentationDetents([.medium])
+            .presentationDragIndicator(.visible)
         }
     }
-
-    func onTap(auth: AuthProvider, wallet: WalletConnectProviders? = nil) {
+    
+    func onTap(auth: AuthProvider) {
         switch auth {
         case .metamask:
             ethereum.connect(dapp)?.sink(receiveCompletion: { completion in
@@ -80,16 +81,12 @@ struct LoginView: View {
                 }
             }).store(in: &cancellables)
         case .walletconnect:
-            if wallet == nil {
-                Task(priority: .userInitiated) {
-                    try await viewModel.setupInitialState()
-                }
-
-                self.presentWalletConnectView = true
+            Task(priority: .userInitiated) {
+                try await viewModel.setupInitialState()
+                qrImage = viewModel.uriString.map { QRCodeGenerator.generateQRCode(from: $0) }
             }
-
-            guard let uri = viewModel.uriString, let uriURL = wallet?.uniURL, let url = URL(string: "\(uriURL)://wc?uri=\(uri)") else { return }
-            UIApplication.shared.open(url)
+            
+            self.presentWalletConnectView = true
         case .snowball:
             print("")
         }
