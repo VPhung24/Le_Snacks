@@ -15,6 +15,7 @@ enum LeSnacksEndpoints: Endpoint {
     case getUser(_ address: String)
     case checkin(_ restaurantId: String)
     case restaurantInfo(_ restaurantId: String)
+    case proofOfSnacks(_ address: String)
 
     var path: String {
         switch self {
@@ -32,6 +33,8 @@ enum LeSnacksEndpoints: Endpoint {
             return "/restaurants/\(restaurantId)/checkin"
         case .restaurantInfo(let restaurantId):
             return "/restaurants/\(restaurantId)"
+        case .proofOfSnacks(let address):
+            return "/proof_of_snacks/\(address)"
         }
     }
 

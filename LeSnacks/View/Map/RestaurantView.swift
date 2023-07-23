@@ -42,6 +42,6 @@ struct RestaurantView: View {
 
 struct RestaurantView_Previews: PreviewProvider {
     static var previews: some View {
-        RestaurantView(address: "0xafe50ddc4dabf67e6e1e8262c880fc5d3d34be1b", restaurant: Restaurant(id: "sdsada", name: "food", url: "blah", rating: 4.0, cuisine: "sushi", address: "asddasd", geolocation: Geolocation(latitude: 2.0, longitude: 3.0)))
+        RestaurantView(address: "0xafe50ddc4dabf67e6e1e8262c880fc5d3d34be1b", restaurant: Restaurant(id: "sdsada", name: "food", url: "blah", rating: 4.0, cuisine: "sushi", address: "asddasd", geolocation: Geolocation(latitude: 2.0, longitude: 3.0), poapUri: "sss"))
     }
 }

@@ -16,6 +16,18 @@ struct Restaurant: Codable, Identifiable {
     let cuisine: String
     let address: String
     let geolocation: Geolocation
+    let poapUri: String?
+    
+    enum CodingKeys: String, CodingKey {
+        case id
+        case name
+        case url
+        case rating
+        case cuisine
+        case address
+        case geolocation
+        case poapUri = "poap_uri"
+    }
 }
 
 struct Geolocation: Codable {

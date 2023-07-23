@@ -3,4 +3,162 @@
    uuid = "5F85F165-3A99-4DA9-90C2-704CD003FB34"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "FF0E6A57-9983-438A-94EC-33AC9B5B3271"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LeSnacks/View/ProofOfSnacksView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "FF0E6A57-9983-438A-94EC-33AC9B5B3271 - d9ee50e5d3b426a2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (LeSnacks.Restaurant) -&gt; Swift.Optional&lt;SwiftUI.AsyncImage&lt;SwiftUI.Image&gt;&gt; in closure #1 () -&gt; SwiftUI.ForEach&lt;Swift.Array&lt;LeSnacks.Restaurant&gt;, Swift.String, Swift.Optional&lt;SwiftUI.AsyncImage&lt;SwiftUI.Image&gt;&gt;&gt; in LeSnacks.ProofOfSnacksView.body.getter : some"
+                  moduleName = "LeSnacks"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vivianphung/Developer/LeSnacks/LeSnacks/View/ProofOfSnacksView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "616">
+               </Location>
+               <Location
+                  uuid = "FF0E6A57-9983-438A-94EC-33AC9B5B3271 - d9ee50e5d3b426a2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (LeSnacks.Restaurant) -&gt; Swift.Optional&lt;SwiftUI.AsyncImage&lt;SwiftUI.Image&gt;&gt; in closure #1 () -&gt; SwiftUI.ForEach&lt;Swift.Array&lt;LeSnacks.Restaurant&gt;, Swift.String, Swift.Optional&lt;SwiftUI.AsyncImage&lt;SwiftUI.Image&gt;&gt;&gt; in LeSnacks.ProofOfSnacksView.body.getter : some"
+                  moduleName = "LeSnacks"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vivianphung/Developer/LeSnacks/LeSnacks/View/ProofOfSnacksView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "668">
+               </Location>
+               <Location
+                  uuid = "FF0E6A57-9983-438A-94EC-33AC9B5B3271 - d9ee50e5d3b426a2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (LeSnacks.Restaurant) -&gt; Swift.Optional&lt;SwiftUI.AsyncImage&lt;SwiftUI.Image&gt;&gt; in closure #1 () -&gt; SwiftUI.ForEach&lt;Swift.Array&lt;LeSnacks.Restaurant&gt;, Swift.String, Swift.Optional&lt;SwiftUI.AsyncImage&lt;SwiftUI.Image&gt;&gt;&gt; in LeSnacks.ProofOfSnacksView.body.getter : some"
+                  moduleName = "LeSnacks"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vivianphung/Developer/LeSnacks/LeSnacks/View/ProofOfSnacksView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "740">
+               </Location>
+               <Location
+                  uuid = "FF0E6A57-9983-438A-94EC-33AC9B5B3271 - d9ee50e5d3b426a2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (LeSnacks.Restaurant) -&gt; Swift.Optional&lt;SwiftUI.AsyncImage&lt;SwiftUI.Image&gt;&gt; in closure #1 () -&gt; SwiftUI.ForEach&lt;Swift.Array&lt;LeSnacks.Restaurant&gt;, Swift.String, Swift.Optional&lt;SwiftUI.AsyncImage&lt;SwiftUI.Image&gt;&gt;&gt; in LeSnacks.ProofOfSnacksView.body.getter : some"
+                  moduleName = "LeSnacks"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vivianphung/Developer/LeSnacks/LeSnacks/View/ProofOfSnacksView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "648">
+               </Location>
+               <Location
+                  uuid = "FF0E6A57-9983-438A-94EC-33AC9B5B3271 - d9ee50e5d3b426a2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (LeSnacks.Restaurant) -&gt; Swift.Optional&lt;SwiftUI.AsyncImage&lt;SwiftUI.Image&gt;&gt; in closure #1 () -&gt; SwiftUI.ForEach&lt;Swift.Array&lt;LeSnacks.Restaurant&gt;, Swift.String, Swift.Optional&lt;SwiftUI.AsyncImage&lt;SwiftUI.Image&gt;&gt;&gt; in LeSnacks.ProofOfSnacksView.body.getter : some"
+                  moduleName = "LeSnacks"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vivianphung/Developer/LeSnacks/LeSnacks/View/ProofOfSnacksView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "700">
+               </Location>
+               <Location
+                  uuid = "FF0E6A57-9983-438A-94EC-33AC9B5B3271 - d9ee50e5d3b426a2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (LeSnacks.Restaurant) -&gt; Swift.Optional&lt;SwiftUI.AsyncImage&lt;SwiftUI.Image&gt;&gt; in closure #1 () -&gt; SwiftUI.ForEach&lt;Swift.Array&lt;LeSnacks.Restaurant&gt;, Swift.String, Swift.Optional&lt;SwiftUI.AsyncImage&lt;SwiftUI.Image&gt;&gt;&gt; in LeSnacks.ProofOfSnacksView.body.getter : some"
+                  moduleName = "LeSnacks"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vivianphung/Developer/LeSnacks/LeSnacks/View/ProofOfSnacksView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "760">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "54161596-A8AB-49CA-9CD9-2E15606C91D6"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LeSnacks/View/ProofOfSnacksView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "54161596-A8AB-49CA-9CD9-2E15606C91D6 - d9ee50e5d3b42683"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (LeSnacks.Restaurant) -&gt; Swift.Optional&lt;SwiftUI.AsyncImage&lt;SwiftUI.Image&gt;&gt; in closure #1 () -&gt; SwiftUI.ForEach&lt;Swift.Array&lt;LeSnacks.Restaurant&gt;, Swift.String, Swift.Optional&lt;SwiftUI.AsyncImage&lt;SwiftUI.Image&gt;&gt;&gt; in LeSnacks.ProofOfSnacksView.body.getter : some"
+                  moduleName = "LeSnacks"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vivianphung/Developer/LeSnacks/LeSnacks/View/ProofOfSnacksView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "1060">
+               </Location>
+               <Location
+                  uuid = "54161596-A8AB-49CA-9CD9-2E15606C91D6 - d9ee50e5d3b42683"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (LeSnacks.Restaurant) -&gt; Swift.Optional&lt;SwiftUI.AsyncImage&lt;SwiftUI.Image&gt;&gt; in closure #1 () -&gt; SwiftUI.ForEach&lt;Swift.Array&lt;LeSnacks.Restaurant&gt;, Swift.String, Swift.Optional&lt;SwiftUI.AsyncImage&lt;SwiftUI.Image&gt;&gt;&gt; in LeSnacks.ProofOfSnacksView.body.getter : some"
+                  moduleName = "LeSnacks"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vivianphung/Developer/LeSnacks/LeSnacks/View/ProofOfSnacksView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "1164">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

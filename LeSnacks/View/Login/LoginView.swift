@@ -12,6 +12,7 @@ import SnowballAssetKit
 import metamask_ios_sdk
 
 struct LoginView: View {
+    @State var presentLitProtocolView: Bool = false
     @State var presentWalletConnectView: Bool = false
     @StateObject private var viewModel = WalletConnectAuthViewModel()
     @State var qrImage: UIImage?
@@ -61,6 +62,12 @@ struct LoginView: View {
             .presentationDetents([.medium])
             .presentationDragIndicator(.visible)
         }
+        .popover(isPresented: $presentLitProtocolView) {
+            WebView(url: URL(string: "https://nextjs-typescript-pearl.vercel.app")!)
+                .ignoresSafeArea()
+                .navigationTitle("Passkey")
+                .navigationBarTitleDisplayMode(.inline)
+        }
     }
     
     func onTap(auth: AuthProvider) {
@@ -88,7 +95,7 @@ struct LoginView: View {
             
             self.presentWalletConnectView = true
         case .snowball:
-            print("")
+            self.presentLitProtocolView = true
         }
     }
 }

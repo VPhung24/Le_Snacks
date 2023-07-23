@@ -14,6 +14,7 @@ struct HomeView: View {
         TabView {
             ProfileView(address: address)
             MapView(address: address)
+            ProofOfSnacksView(address: address)
         }
     }
 }

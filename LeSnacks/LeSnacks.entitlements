@@ -6,6 +6,8 @@
 	<array>
 		<string>webcredentials:lesnacks.xyz</string>
 		<string>applinks:lesnacks.xyz</string>
+		<string>webcredentials:nextjs-typescript-pearl.vercel.app</string>
+		<string>applinks:nextjs-typescript-pearl.vercel.app</string>
 	</array>
 </dict>
 </plist>
